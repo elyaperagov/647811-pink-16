@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Илья Пирогов](https://up.htmlacademy.ru/adaptive/16/user/647811).
-* Наставник: [Александр Лямин] (https://htmlacademy.ru/profile/id1035663).
+* Наставник: [Владислав Кривокора](https://htmlacademy.ru/profile/krivokora).
 
 ---
 
