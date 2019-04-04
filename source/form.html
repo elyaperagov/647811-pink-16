@@ -17,7 +17,7 @@
           <li class="site-list__item">
             <a href="#">Фотографии</a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--active">
             <a href="#">Конкурс</a>
           </li>
           <li class="site-list__item">
@@ -34,6 +34,54 @@
       <div class="main-competition__wrapper">
         <h1 class="main-competition__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
+      <section class="form-section">
+        <form class="form" action="https://echo.htmlacademy.ru" method="post">
+          <h2 class="form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+            Пожалуйста, заполните форму ниже:
+          </h2>
+          <div class="form__data form--personal">
+            <p class="form__item">
+              <label for="lastname">Фамилия</label><br>
+              <input type="text" name="lastname" placeholder="Укажите фамилию*" id="lastname" required>
+            </p>
+            <p class="form__item">
+              <label for="name">Имя</label><br>
+              <input type="text" name="name" placeholder="Введите ваше имя*" id="name" required>
+            </p>
+            <p class="form__item">
+              <label for="patronymic">Отчество:</label><br>
+              <input type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
+            </p>
+          </div>
+          <h2 class="form__title">Ваши безбашенные достижения в путешествии</h2>
+          <ul class="form__data form--achievements">
+            <li class="form__item">
+              <input class="sr-only" id="shark" type="checkbox" name="achievements" checked>
+              <label for="shark">Сделал селфи с акулой</label>
+            </li>
+            <li class="form__item">
+              <input class="form__item form__item--checkbox" id="beach" type="checkbox" name="achievements" checked>
+              <label for="beach">Обгорел на пляже</label>
+            </li>
+            <li class="form__item">
+              <input class="form__item form__item--checkbox" id="norris" type="checkbox" name="achievements">
+              <label for="norris">Видел Чака Норриса</label>
+            </li>
+            <li class="form__item">
+              <input class="form__item form__item--checkbox" id="souvenirs" type="checkbox" name="achievements">
+              <label for="souvenirs">Накупил сувениров</label>
+            </li>
+            <li class="form__item">
+              <input class="form__item form__item--checkbox" id="tower" type="checkbox" name="achievements" checked>
+              <label for="tower">Удержал башню</label>
+            </li>
+            <li class="form__item">
+              <input class="form__item form__item--checkbox" id="hotel" type="checkbox" name="achievements">
+              <label for="hotel">Разгромил отель</label>
+            </li>
+          </ul>
+        </form>
+      </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__logo"></div>
