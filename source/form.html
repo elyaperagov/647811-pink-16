@@ -6,9 +6,11 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="index.html" title="Вернуться на главную">
-        <img src="http://placehold.it/86x35" width="86" height="35" alt="Логотип Пинк">
-      </a>
+      <div class="page-header__top">
+        <a class="page-header__logo" href="index.html" title="Вернуться на главную">
+          <img src="http://placehold.it/86x35" width="86" height="35" alt="Логотип Пинк">
+        </a>
+      </div>
       <nav class="main-nav">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
@@ -28,60 +30,58 @@
           </li>
         </ul>
       </nav>
-      <img class="page-header__photo" src="http://placehold.it/150x100" alt="Телефон в руке">
     </header>
     <main class="main-competition">
       <div class="main-competition__wrapper">
         <h1 class="main-competition__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
-      <section class="form-section">
-        <form class="form" action="https://echo.htmlacademy.ru" method="post">
-          <h2 class="form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
-            Пожалуйста, заполните форму ниже:
-          </h2>
-          <div class="form__data form--personal">
-            <p class="form__item">
-              <label for="lastname">Фамилия</label><br>
-              <input type="text" name="lastname" placeholder="Укажите фамилию*" id="lastname" required>
-            </p>
-            <p class="form__item">
-              <label for="name">Имя</label><br>
-              <input type="text" name="name" placeholder="Введите ваше имя*" id="name" required>
-            </p>
-            <p class="form__item">
-              <label for="patronymic">Отчество:</label><br>
-              <input type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
-            </p>
-          </div>
-          <h2 class="form__title">Ваши безбашенные достижения в путешествии</h2>
-          <ul class="form__data form--achievements">
-            <li class="form__item">
-              <input class="sr-only" id="shark" type="checkbox" name="achievements" checked>
-              <label for="shark">Сделал селфи с акулой</label>
-            </li>
-            <li class="form__item">
-              <input class="form__item form__item--checkbox" id="beach" type="checkbox" name="achievements" checked>
-              <label for="beach">Обгорел на пляже</label>
-            </li>
-            <li class="form__item">
-              <input class="form__item form__item--checkbox" id="norris" type="checkbox" name="achievements">
-              <label for="norris">Видел Чака Норриса</label>
-            </li>
-            <li class="form__item">
-              <input class="form__item form__item--checkbox" id="souvenirs" type="checkbox" name="achievements">
-              <label for="souvenirs">Накупил сувениров</label>
-            </li>
-            <li class="form__item">
-              <input class="form__item form__item--checkbox" id="tower" type="checkbox" name="achievements" checked>
-              <label for="tower">Удержал башню</label>
-            </li>
-            <li class="form__item">
-              <input class="form__item form__item--checkbox" id="hotel" type="checkbox" name="achievements">
-              <label for="hotel">Разгромил отель</label>
-            </li>
-          </ul>
-        </form>
-      </section>
+      <form class="form" action="https://echo.htmlacademy.ru" method="post">
+        <h2 class="form__title">
+          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+          Пожалуйста, заполните форму ниже:
+        </h2>
+        <ul class="form__data form--personal">
+          <li class="form__item">
+            <label for="lastname">Фамилия</label><br>
+            <input class="form__item form__item--personal" type="text" name="lastname" placeholder="Укажите фамилию*" id="lastname" required>
+          </li>
+          <li class="form__item">
+            <label for="name">Имя</label><br>
+            <input class="form__item form__item--personal" type="text" name="name" placeholder="Введите ваше имя*" id="name" required>
+          </li>
+          <li class="form__item">
+            <label for="patronymic">Отчество:</label><br>
+            <inputclass="form__item form__item--personal" type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
+          </li>
+        </ul>
+        <h2 class="form__title">Ваши безбашенные достижения в путешествии</h2>
+        <ul class="form__data form--achievements">
+          <li class="form__item">
+            <input class="form__item form__item--checkbox" id="shark" type="checkbox" name="achievements" checked>
+            <label for="shark">Сделал селфи с акулой</label>
+          </li>
+          <li class="form__item">
+            <input class="form__item form__item--checkbox" id="beach" type="checkbox" name="achievements" checked>
+            <label for="beach">Обгорел на пляже</label>
+          </li>
+          <li class="form__item">
+            <input class="form__item form__item--checkbox" id="norris" type="checkbox" name="achievements">
+            <label for="norris">Видел Чака Норриса</label>
+          </li>
+          <li class="form__item">
+            <input class="form__item form__item--checkbox" id="souvenirs" type="checkbox" name="achievements">
+            <label for="souvenirs">Накупил сувениров</label>
+          </li>
+          <li class="form__item">
+            <input class="form__item form__item--checkbox" id="tower" type="checkbox" name="achievements" checked>
+            <label for="tower">Удержал башню</label>
+          </li>
+          <li class="form__item">
+            <input class="form__item form__item--checkbox" id="hotel" type="checkbox" name="achievements">
+            <label for="hotel">Разгромил отель</label>
+          </li>
+        </ul>
+      </form>
     </main>
     <footer class="page-footer">
       <div class="page-footer__logo"></div>
@@ -97,9 +97,9 @@
         </li>
       </ul>
       <div class="page-footer copyright">
-        <span class="copyright__author">Разработано</span>
-        <a href="https://htmlacademy.ru" class="copyright__picture">
-          <img src="http://placehold.it/27x34" width="27" height="34" alt="htmlacademy">
+        <p class="copyright__title">Разработано</p>
+        <a href="https://htmlacademy.ru" class="copyright__link">
+          <img src="http://placehold.it/27x34" class="copyright__picture" width="27" height="34" alt="htmlacademy">
         </a>
       </div>
     </footer>
