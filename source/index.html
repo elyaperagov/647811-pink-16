@@ -5,8 +5,141 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
+    <header class="page-header">
+      <div class="page-header__top">
+        <a class="page-header__logo" title="Главная">
+          <img src="http://placehold.it/86x35" width="86" height="35" alt="Логотип Пинк">
+        </a>
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a>Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Контакты</a>
+          </li>
+          <li class="site-list__item">
+            <a href="http://www.htmlacademy.ru">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-index">
+      <h1 class="visually-hidden">Главная страница PINK</h1>
+      <section class="download">
+        <h2 class="visually-hidden">Скачать приложение</h2>
+        <div class="download__app">
+          <a class="download__button">Скачать приложение</a>
+          <div class="download__list">
+            <a class="download__item download__item--iphone" href="#"><img src="http://placehold.it/86x35" width="86" height="35" alt="Скачать для iPhone">Apple</a>
+            <a class="download__item download__item--android" href="#"><img src="http://placehold.it/86x35" width="86" height="35" alt="Скачать для Android">Android</a>
+            <a class="download__item download__item--win" href="#"><img src="http://placehold.it/86x35" width="86" height="35" alt="Скачать для Windows">Windows</a>
+          </div>
+          <p class="download__desc">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+      </section>
+      <section class="advantages">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <p class="advantages__desc">Устали от серости мегаполиса?</p>
+        <p class="advantages__desc">Нам есть, что вам предложить!</p>
+        <div class="advantages__list">
+          <div class="advantages__item advantages__item--mood">
+            <h3 class="advantages__title">Поднимает настроение</h3>
+            <p class="advantages__about">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </div>
+          <div class="advantages__item advantages__item--world">
+            <h3 class="advantages__title">Меняет мир вокруг</h3>
+            <p class="advantages__about">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </div>
+          <div class="advantages__item advantages__item--friends">
+            <h3 class="advantages__title">Заводит новых друзей</h3>
+            <p class="advantages__about">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </div>
+        </div>
+      </section>
+      <section class="reviews">
+        <h2 class="visually-hidden">Отзывы</h2>
+        <div class="reviews__wrapper">
+          <div class="reviews__list">
+            <div class="reviews__customer">
+              <p class="reviews__customer-name">Николай Петров</p>
+              <blockquote class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+              А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+              </blockquote>
+            </div>
+            <div class="reviews__customer">
+              <p class="reviews__customer-name"></p>
+              <blockquote class="reviews__text">
+              </blockquote>
+            </div>
+            <div class="reviews__customer">
+              <p class="reviews__customer-name"></p>
+              <blockquote class="reviews__text">
+              </blockquote>
+            </div>
+            <div class="reviews__pagination  pagination">
+              <span class="pagination__item  pagination__item‐‐active"></span>
+              <span class="pagination__item"></span>
+              <span class="pagination__item"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="rates">
+        <h2 class="visually-hidden">Расценки</h2>
+        <div class="rates__wrapper">
+          <table class="rates__table">
+            <tr>
+              <th class="rates__table rates--option">Стандарт 3,99 USD</th>
+            </tr>
+            <tr>
+              <td class="rates__detail">Розовый фильтр</td>
+              <td class="rates__switcher">Вкл</td>
+            </tr>
+            <tr>
+              <td class="rates__detail">Смайлики</td>
+              <td class="rates__switcher">Вкл</td>
+            </tr>
+            <tr>
+              <td class="rates__detail">Комментарии</td>
+              <td class="rates__switcher">Выкл</td>
+            </tr>
+          </table>
+          <div class="rates__pagination  pagination">
+            <span class="pagination__item"></span>
+            <span class="pagination__item pagination__item‐‐active"></span>
+            <span class="pagination__item"></span>
+          </div>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="contacts__wrapper">
+          <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
+        </div>
+        <div class="contacts__item contacts--phone">
+          <div class="contacts__item">
+            <p class="contacts__title">Звоните!</p>
+            <a href="tel:+7(812)5556666" class="contacts__text">+7 (812) 555-66-66</a>
+          </div>
+          <div class="contacts__item contacts--email">
+            <p class="contacts__title">Пишите!</p>
+            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </div>
+          <div class="contacts__item contacts--address">
+            <p class="contacts__title">Приезжайте в гости!</p>
+            <address class="contacts__text">ул. Большая Конюшенная, 19/8</address>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+    </footer>
   </body>
 </html>
