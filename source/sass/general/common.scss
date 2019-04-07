@@ -1,0 +1,25 @@
+body{
+  font-family: $font;
+  background-color: $general-background;
+}
+@mixin wrapper() {
+  min-width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+
+  @media $tablets-widths {
+    min-width: 768;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media $desktops-widths {
+    min-width: auto;
+    width: 100%;
+    max-width: 1300px;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin: 0 auto;
+  }
+}
