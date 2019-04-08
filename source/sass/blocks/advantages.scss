@@ -1,9 +1,11 @@
 .advantages {
   @include wrapper;
 }
+
 .page-titles {
   @include visually-hidden;
 }
+
 .advantages__desc {
   font-size: 24px;
   font-weight: lighter;
@@ -22,12 +24,14 @@
   font-size: $font-size;
   text-align: center;
 }
+
 .advantages__list {
   position: relative;
   background-color: $light-gray;
 }
+
 .advantages__list::after {
-  content: '';
+  content: "";
   position: relative;
   display: block;
   bottom: 0;
@@ -36,6 +40,6 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 40px;
-  background-image: url(../img/iphone-screen-mobile@1x.png);
+  background-image: url("../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
 }

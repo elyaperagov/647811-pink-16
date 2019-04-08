@@ -24,6 +24,7 @@
 .site-list__link {
   @include link;
 }
+
 .site-list__item:hover .site-list__link {
   color: $pink;
 }

@@ -5,17 +5,19 @@
 .page-titles {
   @include visually-hidden;
 }
-.main-competition__background{
+
+.main-competition__background {
   font-family: $font;
   font-weight: lighter;
   font-size: 24px;
-  background-image: url('../img/bg-back-mobile@1x.jpg');
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   min-height: 170px;
   color: $white;
   text-align: center;
   padding: 35px 0 80px;
 }
+
 .form__data {
   @include list;
 }
