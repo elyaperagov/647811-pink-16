@@ -1,0 +1,75 @@
+.page-titles {
+  @include visually-hidden;
+}
+
+.main-index {
+  @include wrapper;
+}
+
+.main-index--picture {
+  width: 320px;
+  padding-top: 110px;
+  background-repeat: no-repeat;
+  background-image: url('../img/bg-back-mobile@1x.jpg');
+}
+
+.download {
+  padding-top: 28px;
+  padding-bottom: 29px;
+  background-color: $dark-background;
+  text-align: center;
+}
+
+.download__button {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 18px;
+  color: $white;
+  cursor: pointer;
+  border: 3px solid $white;
+  border-radius: 30px;
+  background-color: transparent;
+  padding: 18px 40px;
+  height: auto;
+  margin: 0 auto;
+}
+.download__list {
+  font-size: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 30px 30px 58px;
+}
+.download__item{
+  width: 47px;
+  height: 56px;
+  margin-right: 16px;
+  margin-left: 16px;
+}
+.download__item--iphone{
+  background: url(../img/logo-apple.svg) no-repeat center center ;
+  background-size: 47px 56px;
+}
+.download__item--android{
+  background: url(../img/logo-android.svg) no-repeat center center ;
+  background-size: 43px 47px;
+}
+.download__item--win{
+  background: url(../img/logo-microsoft.svg) no-repeat center center ;
+  background-size: 44px 41px;
+}
+
+.download-list {
+  @include list;
+}
+
+.download__item {
+  @include link;
+}
+
+.download__desc {
+  text-align: center;
+  color: $white;
+  font-size: $font-size;
+  line-height: $line-height;
+}

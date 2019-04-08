@@ -1,0 +1,21 @@
+.main-photo {
+  @include wrapper;
+}
+.gallery__background{
+  font-family: $font;
+  font-size: 24px;
+  font-weight: lighter;
+  background-image: url('../img/bg-back-mobile@1x.jpg');
+  background-repeat: no-repeat;
+  min-height: 170px;
+  color: $white;
+  text-align: center;
+  padding: 35px 0 80px;
+}
+
+.gallery__description {
+  font-family: $font;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+}
