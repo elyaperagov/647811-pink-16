@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -14,39 +15,42 @@
       <nav class="main-nav">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a>Главная</a>
+            <a class="site-list__link">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="#">Фотографии</a>
+            <a class="site-list__link" href="#">Фотографии</a>
           </li>
           <li class="site-list__item">
-            <a href="#">Конкурс</a>
+            <a class="site-list__link" href="#">Конкурс</a>
           </li>
           <li class="site-list__item">
-            <a href="#">Контакты</a>
+            <a class="site-list__link" href="#">Контакты</a>
           </li>
           <li class="site-list__item">
-            <a href="http://www.htmlacademy.ru">HTML Academy</a>
+            <a class="site-list__link" href="http://www.htmlacademy.ru">HTML Academy</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="main-index">
-      <h1 class="visually-hidden">Главная страница PINK</h1>
+      <div class="main-index main-index--picture">
+        <img src="img/iphone-hand-mobile@1x.png" width="280" height="314" alt="Скачать Pink">
+        <h1 class="visually-hidden page-titles">Главная страница PINK</h1>
+      </div>
       <section class="download">
-        <h2 class="visually-hidden">Скачать приложение</h2>
+        <h2 class="visually-hidden page-titles">Скачать приложение</h2>
         <div class="download__app">
           <a class="download__button">Скачать приложение</a>
           <div class="download__list">
-            <a class="download__item download__item--iphone" href="#"><img src="http://placehold.it/86x35" width="86" height="35" alt="Скачать для iPhone">Apple</a>
-            <a class="download__item download__item--android" href="#"><img src="http://placehold.it/86x35" width="86" height="35" alt="Скачать для Android">Android</a>
-            <a class="download__item download__item--win" href="#"><img src="http://placehold.it/86x35" width="86" height="35" alt="Скачать для Windows">Windows</a>
+            <a class="download__item download__item--iphone" href="#">Apple</a>
+            <a class="download__item download__item--android" href="#">Android</a>
+            <a class="download__item download__item--win" href="#">Windows</a>
           </div>
           <p class="download__desc">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
       </section>
       <section class="advantages">
-        <h2 class="visually-hidden">Преимущества</h2>
+        <h2 class="page-titles">Преимущества</h2>
         <p class="advantages__desc">Устали от серости мегаполиса?</p>
         <p class="advantages__desc">Нам есть, что вам предложить!</p>
         <div class="advantages__list">
