@@ -5,9 +5,14 @@
   font-size: 18px;
   line-height: 32px;
   text-transform: uppercase;
-  background-color: $main-background;
   text-align: center;
   white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header__logo {
+  height: 200px;
 }
 
 .main-nav__list {

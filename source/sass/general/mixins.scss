@@ -21,9 +21,17 @@
   cursor: pointer;
 }
 
-@mixin wrapper() {
-  width: 320px;
+@mixin wrapper(min-width: $mobile) {
+  width: 100%;
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
+
+  @media(min-width: $tablets) {
+    width: 100%;
+  }
+
+  @media(min-width: $desktops) {
+    width: 100%;
+  }
 }
