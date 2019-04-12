@@ -1,8 +1,8 @@
-.main-competition {
+.main-competition__wrapper {
   @include wrapper;
 }
 
-.page-titles {
+.hidden-titles {
   @include visually-hidden;
 }
 
@@ -10,6 +10,7 @@
   font-family: $font;
   font-weight: lighter;
   font-size: 24px;
+  background-color: $main-background;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   min-height: 170px;

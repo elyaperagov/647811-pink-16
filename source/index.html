@@ -7,11 +7,10 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__top">
-        <a class="page-header__logo" title="Главная">
-          <img src="http://placehold.it/86x35" width="86" height="35" alt="Логотип Пинк">
-        </a>
-      </div>
+      <div class="page-header__wrapper">
+        <div class="page-header__logo" title="Главная">
+          <img class="page-header__image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Пинк">
+        </div>
       <nav class="main-nav">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
@@ -24,35 +23,40 @@
             <a class="site-list__link" href="#">Конкурс</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="#">Контакты</a>
-          </li>
-          <li class="site-list__item">
             <a class="site-list__link" href="http://www.htmlacademy.ru">HTML Academy</a>
           </li>
         </ul>
       </nav>
+      </div>
     </header>
     <main class="main-index">
-      <div class="main-index main-index--picture">
-        <img src="img/iphone-hand-mobile@1x.png" width="280" height="314" alt="Скачать Pink">
-        <h1 class="visually-hidden page-titles">Главная страница PINK</h1>
-      </div>
       <section class="download">
-        <h2 class="visually-hidden page-titles">Скачать приложение</h2>
-        <div class="download__app">
-          <a class="download__button">Скачать приложение</a>
-          <div class="download__list">
-            <a class="download__item download__item--iphone" href="#">Apple</a>
-            <a class="download__item download__item--android" href="#">Android</a>
-            <a class="download__item download__item--win" href="#">Windows</a>
+        <div class="download__wrapper">
+          <div class="download__picture">
+            <!--<img src="img/iphone-hand-mobile@1x.png" width="280" height="314" alt="Скачать Pink">-->
+            <h1 class="hidden-titles">Главная страница PINK</h1>
           </div>
-          <p class="download__desc">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-        </div>
-      </section>
+          <div class="download__app">
+            <h2 class="download__slogan">Взгляните на жизнь иначе!</h2>
+              <a class="download__button">Скачать приложение</a>
+              <div class="download__list">
+                <a class="download__item download__item--iphone" href="#">Apple</a>
+                <a class="download__item download__item--android" href="#">Android</a>
+                <a class="download__item download__item--win" href="#">Windows</a>
+              </div>
+              <div class="download__desc">
+                Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+              </div>
+            </div>
+          </div>
+        </section>
       <section class="advantages">
-        <h2 class="page-titles">Преимущества</h2>
-        <p class="advantages__desc">Устали от серости мегаполиса?</p>
-        <p class="advantages__desc">Нам есть, что вам предложить!</p>
+        <h2 class="hidden-titles">Преимущества</h2>
+        <div class="advantages__wrapper">
+          <div class="advantages__overview">
+            <p class="advantages__desc">Устали от серости мегаполиса?</p>
+            <p class="advantages__desc">Нам есть, что вам предложить!</p>
+          </div>
         <div class="advantages__list">
           <div class="advantages__item advantages__item--mood">
             <h3 class="advantages__title">Поднимает настроение</h3>
@@ -67,9 +71,10 @@
             <p class="advantages__about">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </div>
         </div>
+      </div>
       </section>
       <section class="reviews">
-        <h2 class="visually-hidden">Отзывы</h2>
+        <!--<h2 class="visually-hidden">Отзывы</h2>-->
         <div class="reviews__wrapper">
           <div class="reviews__list">
             <div class="reviews__customer">
@@ -97,8 +102,8 @@
         </div>
       </section>
       <section class="rates">
-        <h2 class="visually-hidden">Расценки</h2>
         <div class="rates__wrapper">
+          <!--<h2 class="visually-hidden">Расценки</h2>-->
           <table class="rates__table">
             <tr>
               <th class="rates__table rates--option">Стандарт 3,99 USD</th>
@@ -126,19 +131,19 @@
       <section class="contacts">
         <div class="contacts__wrapper">
           <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
-        </div>
-        <div class="contacts__item contacts--phone">
-          <div class="contacts__item">
-            <p class="contacts__title">Звоните!</p>
-            <a href="tel:+7(812)5556666" class="contacts__text">+7 (812) 555-66-66</a>
-          </div>
-          <div class="contacts__item contacts--email">
-            <p class="contacts__title">Пишите!</p>
-            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </div>
-          <div class="contacts__item contacts--address">
-            <p class="contacts__title">Приезжайте в гости!</p>
-            <address class="contacts__text">ул. Большая Конюшенная, 19/8</address>
+          <div class="contacts__item contacts--phone">
+            <div class="contacts__item">
+              <p class="contacts__title">Звоните!</p>
+              <a href="tel:+7(812)5556666" class="contacts__text">+7 (812) 555-66-66</a>
+            </div>
+            <div class="contacts__item contacts--email">
+              <p class="contacts__title">Пишите!</p>
+              <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </div>
+            <div class="contacts__item contacts--address">
+              <p class="contacts__title">Приезжайте в гости!</p>
+              <address class="contacts__text">ул. Большая Конюшенная, 19/8</address>
+            </div>
           </div>
         </div>
       </section>
