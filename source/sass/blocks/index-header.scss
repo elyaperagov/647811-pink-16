@@ -1,25 +1,14 @@
 .page-header {
   background-color: $main-background;
-  display: flex;
-  flex-direction: column;
 }
 
-.page-header__wrapper {
-  @include wrapper;
-  display: flex;
-  flex-direction: column;
-}
-
-  @media (min-width: $tablets) {
-    .page-header__wrapper {
+.page-header__wrapper  {
+    @include wrapper;
     display: flex;
     flex-direction: column;
-  }
-}
+    margin: 0 auto;
 
   @media (min-width: $desktops) {
-    .page-header__wrapper {
-    display: flex;
     flex-direction: row;
   }
 }
@@ -29,30 +18,14 @@
   margin: 0 auto;
 }
 
-@media (min-width: $desktops) {
+@media (min-width: $tablets) {
   .main-nav {
-    width: 760px;
+    width: auto;
     margin: 0;
   }
 }
 
-  /*.main-nav__wrapper {
-    display: flex;
-    justify-content: space-between;
-    width: 640px;
-    margin: 0 auto;
-  }
-}
-
-
-@media (min-width: $desktops) {
-  .main-nav__wrapper {
-    width: 960px;
-  }
-}*/
-
 .main-nav__list {
-  @include wrapper;
   @include list;
   font-weight: bold;
   font-size: 18px;
@@ -60,19 +33,15 @@
   text-transform: uppercase;
   text-align: center;
   white-space: nowrap;
-}
 
   @media (min-width: $desktops) {
-    .main-nav__list {
-    display: flex;
-    flex-direction: row;
-    line-height: 18px;
-    font-weight: 400;
-    text-transform: none;
-    width: 760px;
+  display: flex;
+  flex-direction: row;
+  line-height: 18px;
+  font-weight: lighter;
+  text-transform: none;
   }
 }
-
 
 .site-list__item {
   cursor: pointer;
@@ -96,3 +65,48 @@
 .site-list__item:hover .site-list__link {
   color: $pink;
 }
+
+/*
+.page-header__wrapper {
+  @include wrapper;
+  display: flex;
+  flex-direction: column;
+}
+
+  @media (min-width: $tablets) {
+    .page-header__wrapper {
+    @include wrapper;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+  @media (min-width: $desktops) {
+    .page-header__wrapper {
+    @include wrapper;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: $desktops) {
+  .main-nav {
+    width: 760px;
+    margin: 0;
+  }
+}
+
+  .main-nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 640px;
+    margin: 0 auto;
+  }
+}
+
+
+@media (min-width: $desktops) {
+  .main-nav__wrapper {
+    width: 960px;
+  }
+}*/

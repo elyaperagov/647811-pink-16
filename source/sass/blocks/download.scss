@@ -13,7 +13,7 @@
 .hidden-titles {
   @include visually-hidden;
 }
-
+/*
 .download__picture::before {
   content: "";
   display: block;
@@ -21,7 +21,7 @@
   height: 314px;
   background-repeat: no-repeat;
   background-image: url("../img/iphone-hand-mobile@1x.png");
-  background-position: top center;
+  background-position: 0 center;
   margin: 0 auto;
 
   @media (min-width: $tablets) {
@@ -30,8 +30,6 @@
     width: 700px;
     height: 545px;
     background-image: url("../img/iphone-hand-tablet@1x.png");
-    background-repeat: no-repeat;
-    background-position: top center;
   }
 
   @media (min-width: $desktops) {
@@ -42,7 +40,7 @@
     background-image: url("../img/iphone-hand-desktop@1x.png");
     background-repeat: no-repeat;
   }
-}
+}*/
 
 .download__slogan {
   font-size: 0;
