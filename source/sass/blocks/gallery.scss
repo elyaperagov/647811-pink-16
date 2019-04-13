@@ -1,5 +1,36 @@
 .gallery__wrapper {
   @include wrapper;
+
+  @media (min-width: $mobiles) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $tablets) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktops) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.gallery__item {
+  @media (min-width: $mobiles) {
+    max-width: 280px;
+  }
+
+  @media (min-width: $tablets) {
+    max-width: 300px;
+  }
+
+  @media (min-width: $desktops) {
+    max-width: 300px;
+  }
 }
 
 .gallery {
@@ -15,6 +46,36 @@
   padding: 35px 0 80px;
   background-color: $main-background;
 }
+/*
+.gallery__item--panorama {
+  @media (min-width: $mobiles) {
+    background-image: url("../img/panorama-mobile@1x.jpg");
+    height: 137px;
+    width: 320px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  @media (min-width: $tablets) {
+    background-image: url("../img/panorama-tablet@1x.jpg");
+    height: 509px;
+    width: 700px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  @media (min-width: $desktops) {
+    background-image: url("../img/panorama-desktop@1x.jpg");
+    height: 506px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+}*/
+
 /*
 .gallery__background::before {
   content: "";

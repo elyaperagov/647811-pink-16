@@ -17,8 +17,8 @@
 .download__picture::before {
   content: "";
   display: block;
-  max-width: 100%;
-  height: 396px;
+  width: 498px;
+  height: 314px;
   background-repeat: no-repeat;
   background-image: url("../img/iphone-hand-mobile@1x.png");
   background-position: top center;
@@ -27,7 +27,6 @@
   @media (min-width: $tablets) {
     content: "";
     position: absolute;
-    max-width: 100%;
     width: 700px;
     height: 545px;
     background-image: url("../img/iphone-hand-tablet@1x.png");
@@ -38,7 +37,6 @@
   @media (min-width: $desktops) {
     content: "";
     position: absolute;
-    max-width: 100%;
     width: 1050px;
     height: 645px;
     background-image: url("../img/iphone-hand-desktop@1x.png");

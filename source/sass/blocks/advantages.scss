@@ -1,10 +1,13 @@
 .advantages {
-  @include wrapper;
+  background-color: $light-gray;
 }
 /*
 .hidden-titles {
   @include visually-hidden;
 }*/
+.advantages__wrapper {
+  @include wrapper;
+}
 
 .advantages__desc {
   font-size: 24px;
@@ -27,20 +30,21 @@
 
 .advantages__list {
   position: relative;
-  background-color: $light-gray;
 
   @media (min-width: $tablets) {
     display: flex;
     flex-direction: column;
+    padding-left: 50%;
   }
 
   @media (min-width: $desktops) {
     display: flex;
     flex-direction: row;
+    padding-left: 0;
   }
 }
 /*---КАРТИНКИ В ПРЕИМУЩЕСТВАХ---*/
-.advantages__item--mood::before {
+.advantages__list::after {
   @media (min-width: $mobiles) {
     content: "";
     position: relative;
@@ -50,21 +54,28 @@
     height: 277px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 40px;
     background-image: url("../img/iphone-screen-mobile@1x.png");
     background-repeat: no-repeat;
   }
 
   @media (min-width: $tablets) {
+    display: none;
+  }
+
+  @media (min-width: $desktops) {
+    display: none;
+  }
+}
+
+.advantages__item--mood::before {
+  @media (min-width: $tablets) {
     content: "";
-    position: relative;
-    display: block;
-    bottom: 0;
+    position: absolute;
+    left: 0;
     width: 268px;
     height: 547px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 40px;
     background-image: url("../img/iphone-screen-3-tablet@1x.png");
     background-repeat: no-repeat;
   }
@@ -80,7 +91,6 @@
     height: 302px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 40px;
     background-image: url("../img/iphone-screen-3-desktop@1x.png");
     background-repeat: no-repeat;
   }
@@ -94,7 +104,6 @@
     height: 302px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 40px;
     background-image: url("../img/iphone-screen-1-desktop@1x.png");
     background-repeat: no-repeat;
     background-position: center top;
@@ -109,7 +118,6 @@
     height: 302px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 40px;
     background-image: url("../img/iphone-screen-2-desktop@1x.png");
     background-repeat: no-repeat;
     background-position: center top;

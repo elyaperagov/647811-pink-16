@@ -1,5 +1,7 @@
 .page-header {
   background-color: $main-background;
+  display: flex;
+  flex-direction: column;
 }
 
 .page-header__wrapper {
@@ -32,16 +34,11 @@
   white-space: nowrap;
 
   @media (min-width: $desktops) {
-    background-color: transparent;
-    border: 0;
-    box-shadow: none;
-    text-transform: none;
-    line-height: 18px;
-    font-weight: 400;
-    padding: 11px 0;
     display: flex;
     flex-direction: row;
-    width: 760px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: none;
   }
 }
 
@@ -64,6 +61,7 @@
 .site-list__link {
   @include link;
 }
+
 
 .site-list__item:hover .site-list__link {
   color: $pink;
