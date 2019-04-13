@@ -1,10 +1,7 @@
 .advantages {
   background-color: $light-gray;
 }
-/*
-.hidden-titles {
-  @include visually-hidden;
-}*/
+
 .advantages__wrapper {
   @include wrapper;
 }
