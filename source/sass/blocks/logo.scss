@@ -1,6 +1,13 @@
 /* stylelint-disable */
 .page-header__logo {
-  @media (min-width: $mobiles) {
+@media (min-width: $mobiles) {
   height: 75px;
+  }
+@media (min-width: $tablets) {
+  height: 110px;
+  }
+@media (min-width: $desktops) {
+  height: 110px;
+  width: 450px;
   }
 }
