@@ -4,6 +4,7 @@
   padding-bottom: 29px;
   background-color: $dark-background;
   text-align: center;
+  overflow: hidden;
 }
 
 .download__wrapper {
@@ -13,7 +14,11 @@
 .hidden-titles {
   @include visually-hidden;
 }
-/*
+
+.download__picture {
+  position: relative;
+}
+
 .download__picture::before {
   content: "";
   display: block;
@@ -40,7 +45,7 @@
     background-image: url("../img/iphone-hand-desktop@1x.png");
     background-repeat: no-repeat;
   }
-}*/
+}
 
 .download__slogan {
   font-size: 0;

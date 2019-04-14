@@ -3,7 +3,6 @@
 }
 
 .page-header__wrapper {
-  @include wrapper;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -14,7 +13,7 @@
 }
 
 .main-nav {
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
 }
 
