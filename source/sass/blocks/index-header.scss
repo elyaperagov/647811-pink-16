@@ -8,6 +8,7 @@
   margin: 0 auto;
 
   @media (min-width: $desktops) {
+    @include wrapper;
     flex-direction: row;
   }
 }
