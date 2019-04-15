@@ -2,10 +2,6 @@
   @include wrapper;
 }
 
-.hidden-titles {
-  @include visually-hidden;
-}
-
 .main-competition__background {
   font-family: $font;
   font-weight: lighter;

@@ -11,28 +11,30 @@
       <div class="page-header__wrapper">
         <div class="page-header__logo" title="Главная">
           <img class="page-header__image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Пинк">
+          <!--<img class="page-header__image" src="img/logo-pink-white-tablet.svg" width="147" height="40" alt="Логотип Пинк">-->
         </div>
-      <nav class="main-nav">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a class="site-list__link" href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="photo.html">Фотографии</a>
-          </li>
-          <li class="site-list__item site-list__item--active">
-            <a class="site-list__link">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="http://www.htmlacademy.ru">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
+        <nav class="main-nav main-nav--opened">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a>Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="http://www.htmlacademy.ru">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
     <main class="main-competition">
       <div class="main-competition__background">
-        <h1 class="hidden-titles">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        <h1 class="visually-hidden">Конкурс на самое безбашенное путешествие с Пинк</h1>
         <p class="main-competition__title">Конкурс на самое безбашенное путешествие с Пинк</p>
       </div>
       <div class="main-competition__wrapper">
@@ -157,5 +159,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
