@@ -1,21 +1,27 @@
-.main-competition {
+.main-competition__wrapper {
   @include wrapper;
-}
-
-.page-titles {
-  @include visually-hidden;
 }
 
 .main-competition__background {
   font-family: $font;
   font-weight: lighter;
   font-size: 24px;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  min-height: 170px;
+  background-color: $main-background;
   color: $white;
   text-align: center;
   padding: 35px 0 80px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: center;
+
+  @media (min-width: $tablets) {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+  }
+
+  @media (min-width: $desktops) {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+  }
 }
 
 .form__data {

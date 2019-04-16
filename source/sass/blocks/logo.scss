@@ -1,0 +1,17 @@
+/* stylelint-disable */
+.page-header__logo  {
+  position: relative;
+  text-align: center;
+  height: 75px;
+
+  @media (min-width: $tablets) {
+    height: 110px;
+  }
+
+  @media (min-width: $desktops) {
+    margin: 0;
+    text-align: center;
+    height: 110px;
+    width: 300px;/*неточно*/
+  }
+}
