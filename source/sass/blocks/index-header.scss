@@ -104,7 +104,7 @@
     position: absolute;
     top: 17px;
     right: 17px;
-    width: 40px;
+    width: 29px;
     height: 4px;
     background-color: #ffffff;
     border-radius: 1px;
@@ -127,7 +127,7 @@
 }
 
 
-@media (max-width: $mobile-width-only) {
+@media (max-width: $desktops) {
   .main-nav--closed .site-list__item {
     display: none;
 
