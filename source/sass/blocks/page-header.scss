@@ -1,5 +1,14 @@
 .page-header {
   background-color: $main-background;
+
+  @media (min-width: $desktops) {
+    position: absolute;
+    min-height: 110px;
+    width: 100%;
+    background-color: transparent;
+    color: #ffffff;
+    z-index: 2;
+  }
 }
 
 .page-header__wrapper {
@@ -17,7 +26,7 @@
 .main-nav {
   width: 100%;
   margin: 0 auto;
-  background-color: $main-background;
+  background-color: transparent;
 }
 
 @media (min-width: $tablets) {

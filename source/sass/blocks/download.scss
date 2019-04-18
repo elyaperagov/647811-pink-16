@@ -12,6 +12,7 @@
   @media (min-width: $tablets) {
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-size: cover;
+    padding-top: 110px;
   }
 
   @media (min-width: $desktops) {
@@ -24,11 +25,11 @@
   @include wrapper;
 }
 
-.download__picture {
+.download-header__wrapper {
   position: relative;
 }
 
-.download__picture::before {
+.download-header__wrapper::before {
   content: "";
   display: block;
   width: 100%;
