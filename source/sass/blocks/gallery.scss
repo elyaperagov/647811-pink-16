@@ -3,7 +3,6 @@
 }
 
 .gallery__background {
-  font-family: $font;
   font-size: 24px;
   font-weight: lighter;
   color: $white;
@@ -28,6 +27,17 @@
   font-family: $font;
   line-height: 30px;
   text-align: center;
+}
+
+@media (min-width: $tablets) {
+  .gallery__title {
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: lighter;
+    color: $white;
+    text-align: center;
+    padding-top: 110px;
+  }
 }
 
 .gallery__wrapper {

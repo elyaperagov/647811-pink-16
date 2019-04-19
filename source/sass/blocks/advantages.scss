@@ -14,7 +14,6 @@
 }
 
 .advantages__title {
-  font-family: $font;
   font-size: 18px;
   font-weight: bold;
   text-align: center;
@@ -26,6 +25,12 @@
   font-size: $font-size;
   text-align: center;
   margin: 0;
+}
+
+@media (min-width: $desktops) {
+  .advantages__item {
+    width: 240px;
+  }
 }
 
 .advantages__list {
@@ -40,6 +45,7 @@
   @media (min-width: $desktops) {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     padding-left: 0;
   }
 }
