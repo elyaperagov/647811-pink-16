@@ -2,24 +2,6 @@
   background-color: $light-gray;
 }
 
-.advantages__wrapper {
-  @include wrapper;
-  position: relative;
-  margin-top: 37px;
-}
-
-/*
-.advantages__overview::after {
-  content: "";
-  position: absolute;
-  background-image: url("../img/bg-triangle-white.svg");
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-}*/
-
 .advantages__overview {
   position: relative;
   background-color: white;
@@ -69,32 +51,10 @@
   }
 }
 
-.advantages__title {
-  font-size: 18px;
-  font-weight: bold;
-  text-align: center;
-  margin: 0;
-
-  @media (min-width: $tablets) {
-    text-align: left;
-  }
-}
-
-.advantages__about {
-  text-align: center;
-  padding: 0 20px;
-
-  @media (min-width: $tablets) {
-    text-align: left;
-    padding: 0 20px 0 0;
-    margin: 12px 0 18px;
-  }
-}
-
-@media (min-width: $desktops) {
-  .advantages__item {
-    width: 240px;
-  }
+.advantages__wrapper {
+  @include wrapper;
+  position: relative;
+  margin-top: 37px;
 }
 
 .advantages__list {
@@ -111,6 +71,7 @@
   @media (min-width: $desktops) {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     padding: 22px 0 0 0;
   }
 }
@@ -120,8 +81,50 @@
 
   @media (min-width: $tablets) {
     margin-top: 17px;
+    width: 300px;
+    padding: 0 30px;
   }
 }
+
+.advantages__title {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+
+  @media (min-width: $tablets) {
+    text-align: left;
+  }
+
+  @media (min-width: $desktops) {
+    font-size: 30px;
+    line-height: 30px;
+    padding-top: 57px;
+    text-align: center;
+  }
+}
+
+.advantages__about {
+  text-align: center;
+  padding: 0 20px;
+
+  @media (min-width: $tablets) {
+    text-align: left;
+    padding: 0 20px 0 0;
+    margin: 12px 0 18px;
+  }
+
+  @media (min-width: $desktops) {
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    max-width: 300px;
+    padding: 0 9px 0 5px;
+    margin: 22px 0 18px;
+  }
+}
+
+
 /*---КАРТИНКИ В ПРЕИМУЩЕСТВАХ---*/
 .advantages__list::after {
   @media (min-width: $mobiles) {
@@ -166,7 +169,10 @@
     content: "";
     position: relative;
     display: block;
+    top: 0;
     bottom: 0;
+    right: 0;
+    left: 0;
     width: 100%;
     height: 302px;
     margin-left: auto;
@@ -180,7 +186,10 @@
     content: "";
     position: relative;
     display: block;
-    top: 0px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
     width: 100%;
     height: 302px;
     margin-left: auto;
@@ -194,7 +203,10 @@
     content: "";
     position: relative;
     display: block;
+    top: 0;
     bottom: 0;
+    right: 0;
+    left: 0;
     width: 100%;
     height: 302px;
     margin-left: auto;
@@ -204,3 +216,15 @@
     background-position: center top;
   }
 }
+
+/*
+.advantages__overview::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/bg-triangle-white.svg");
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}*/
