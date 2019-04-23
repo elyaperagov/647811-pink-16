@@ -3,16 +3,13 @@
 }
 
 .gallery__background {
-  font-size: 24px;
-  font-weight: lighter;
   color: $white;
-  text-align: center;
-  padding: 35px 0 80px;
   background-color: $main-background;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   width: 100%;
   background-position: center;
+  min-height: 170px;
 
   @media (min-width: $tablets) {
     background-image: url("../img/bg-back-tablet@1x.jpg");
@@ -24,13 +21,23 @@
 }
 
 .gallery__description {
+  width: 250px;
   font-family: $font;
   line-height: 30px;
   text-align: center;
+  padding: 30px 0 35px;
+  margin: 0 auto;
 }
 
-@media (min-width: $tablets) {
-  .gallery__title {
+.gallery__title {
+  font-size: 24px;
+  font-weight: lighter;
+  text-align: center;
+  line-height: 30px;
+  padding-top: 29px;
+  margin: 0;
+
+  @media (min-width: $tablets) {
     font-size: 50px;
     line-height: 60px;
     font-weight: lighter;
@@ -77,10 +84,30 @@
 
 .gallery__panorama {
   text-align: center;
+  position: relative;
 }
 
 .gallery__panorama--desc {
   @include wrapper;
+}
+
+.gallery__panorama--text {
+  background-color: $light-gray;
+}
+
+.gallery__panorama--button {
+  position: absolute;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 6px 20px;
+  top: 0;
+  left: 50%;
+  display: block;
+  background-color: #d22856;
+  color: white;
+  cursor: pointer;
 }
 
 /*

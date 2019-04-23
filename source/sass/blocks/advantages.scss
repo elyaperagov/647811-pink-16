@@ -81,8 +81,11 @@
 
   @media (min-width: $tablets) {
     margin-top: 17px;
-    width: 300px;
+  }
+
+  @media (min-width: $desktops) {
     padding: 0 30px;
+    width: 300px;
   }
 }
 
@@ -110,7 +113,7 @@
 
   @media (min-width: $tablets) {
     text-align: left;
-    padding: 0 20px 0 0;
+    padding: 0 16px 0 0;
     margin: 12px 0 18px;
   }
 
