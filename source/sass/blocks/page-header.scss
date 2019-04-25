@@ -26,15 +26,18 @@
 .main-nav {
   width: 100%;
   margin: 0 auto;
-  background-color: transparent;
+  padding-top: 66px;
 
   @media (min-width: $tablets) {
     width: auto;
     margin: 0;
+    background-color: transparent;
+    padding-top: 110px;
   }
 
   @media (min-width: $desktops) {
     margin-left: 30px;
+    padding-top: 0;
   }
 }
 
@@ -165,7 +168,7 @@
 
 .site-list__item {
   cursor: pointer;
-  border-bottom: solid 1px $black;
+  border-bottom: solid 1px black;
   border-top: solid 1px $gray;
   padding: 15px 95px;
 
