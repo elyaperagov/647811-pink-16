@@ -1,5 +1,9 @@
 .page-header {
-  background-color: $main-background;
+  position: absolute;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  z-index: 2;
 
   @media (min-width: $desktops) {
     position: absolute;
@@ -26,13 +30,13 @@
 .main-nav {
   width: 100%;
   margin: 0 auto;
-  padding-top: 66px;
+  /*padding-top: 66px;*/
 
   @media (min-width: $tablets) {
     width: auto;
     margin: 0;
     background-color: transparent;
-    padding-top: 110px;
+  /*  padding-top: 110px;*/
   }
 
   @media (min-width: $desktops) {
