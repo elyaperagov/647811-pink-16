@@ -2,28 +2,50 @@
   @include wrapper;
   display: flex;
   flex-direction: column;
-  align-items: center;
 
   @media (min-width: $tablets) {
     flex-direction: row;
     justify-content: space-between;
 
-    .page-footer__logo {
+    /*.page-footer__logo {
       margin-right: 70px;
-    }
+    }*/
   }
+}
+
+.page-footer__logo {
+  display: block;
+  text-align: center;
 }
 
 .social__list {
   @include list;
+  font-size: 0;
+  margin: 32px auto 40px auto;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
+  max-width: 195px;
+
+  @media (min-width: $tablets) {
+    margin: 0 0 0 -15px;
+  }
+
+  @media (min-width: $desktops) {
+    margin: 5px 0 0 11px;
+  }
 }
 
 .social__item {
   width: 50px;
   height: 50px;
+  border: 3px solid #e9ebec;
+  border-radius: 50%;
+
+  &:nth-child(1),
+  &:nth-child(2) {
+    margin-right: 15px;
+  }
 }
 
 .social__link {
@@ -32,12 +54,44 @@
 
 .social__icon {
   position: absolute;
+  fill: #d22856;
+}
+
+.social__link--twitter {
   top: 15px;
-  bottom: 0;
-  left: 20px;
-  right: 0;
+  left: 14px;
+}
+
+.social__link--facebook {
+  top: 13px;
+  left: 16px;
+}
+
+.social__link--instagram {
+  top: 15px;
+  left: 16px;
 }
 
 .copyright {
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  @media (min-width: $tablets) {
+    margin-top: 13px;
+  }
+}
+
+.copyright__title {
+  margin-right: 15px;
+  margin-top: 4px;
+
+  @media (min-width: $desktops) {
+    font-size: 18px;
+  }
+}
+
+
+.copyright__icon {
+  fill: #d22856;
 }
