@@ -1,0 +1,53 @@
+.gallery__panorama-wrapper {
+  @include wrapper;
+  margin: 0 auto;
+
+  @media (min-width: $tablets) {
+    margin-bottom: 50px;
+  }
+}
+
+.gallery__panorama {
+  text-align: center;
+  position: relative;
+
+  &--button {
+  position: absolute;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 6px 20px;
+  top: 0;
+  left: 50%;
+  display: block;
+  background-color: #d22856;
+  color: white;
+  cursor: pointer;
+  }
+}
+
+.gallery-like__button--panorama {
+  @media (min-width: $tablets) {
+    content: "";
+    position: absolute;
+    top: 32px;
+    right: 28px;
+  }
+}
+
+.gallery-like__like--panorama {
+  @media (min-width: $tablets) {
+  content: "";
+  position: absolute;
+  top: 26px;
+  right: 58px;
+  }
+}
+
+/* ВРЕМЕННО */
+@media (min-width: $tablets) {
+  .gallery__panorama--image {
+    margin-bottom: 315px;
+  }
+}
