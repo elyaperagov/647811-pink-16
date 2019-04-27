@@ -6,6 +6,12 @@
   @media (min-width: $tablets) {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    min-height: 127px;
+
+  @media (min-width: $desktops) {
+    min-height: 200px;
+  }
 
     /*.page-footer__logo {
       margin-right: 70px;
