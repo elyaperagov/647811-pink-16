@@ -9,9 +9,9 @@
     align-items: center;
     min-height: 127px;
 
-  @media (min-width: $desktops) {
-    min-height: 200px;
-  }
+    @media (min-width: $desktops) {
+      min-height: 200px;
+    }
 
     /*.page-footer__logo {
       margin-right: 70px;
@@ -56,26 +56,26 @@
 
 .social__link {
   position: relative;
+
+  &--twitter {
+    top: 15px;
+    left: 14px;
+  }
+
+  &--facebook {
+    top: 13px;
+    left: 16px;
+  }
+
+  &--instagram {
+    top: 15px;
+    left: 16px;
+  }
 }
 
 .social__icon {
   position: absolute;
   fill: #d22856;
-}
-
-.social__link--twitter {
-  top: 15px;
-  left: 14px;
-}
-
-.social__link--facebook {
-  top: 13px;
-  left: 16px;
-}
-
-.social__link--instagram {
-  top: 15px;
-  left: 16px;
 }
 
 .copyright {
