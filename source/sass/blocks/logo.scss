@@ -1,14 +1,15 @@
 /* stylelint-disable */
 .page-header__logo  {
-  position: relative;
-  text-align: center;
-  height: 75px;
+  text-align: left;
+  height: 66px;
 
   @media (min-width: $tablets) {
     height: 110px;
   }
 
   @media (min-width: $desktops) {
+    position: relative;
+    background-color: transparent;
     margin: 0;
     text-align: center;
     height: 110px;

@@ -12,8 +12,8 @@
 
 @mixin wrapper() {
   width: 320px;
-  /*padding-left: 20px;
-  padding-right: 20px;*/
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 0 auto;
 
   @media (min-width: $tablets) {
@@ -25,4 +25,15 @@
     padding-right: 10px;
     padding-left: 10px;
   }
+}
+
+@mixin visually-hidden() {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
 }
