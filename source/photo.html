@@ -10,8 +10,10 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <div class="page-header__logo" title="Главная">
-          <img class="page-header__image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Пинк">
-          <!--<img class="page-header__image" src="img/logo-pink-white-tablet.svg" width="147" height="40" alt="Логотип Пинк">-->
+          <picture>
+            <source class="page-header__image" media="(min-width: 640px)" srcset="img/logo-pink-white-tablet.svg" alt="Логотип Пинк">
+            <img class="page-header__image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Пинк">
+          </picture>
         </div>
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button"><span>Открыть меню</span></button>
@@ -45,7 +47,11 @@
           </div>
           <div class="gallery__panorama">
             <div class="gallery__panorama gallery__panorama--image">
-              <img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg, img/panorama-desktop@2x.jpg">
+                <source media="(min-width: 640px)" srcset="img/panorama-tablet@1x.jpg, img/panorama-tablet@2x.jpg">
+                <img src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg" alt="Панорама">
+              </picture>
               <span class="gallery__panorama gallery__panorama--button">Панорама дня</span>
             </div>
             <div class="gallery__panorama-wrapper">
