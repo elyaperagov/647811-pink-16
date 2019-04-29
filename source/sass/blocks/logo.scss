@@ -13,6 +13,23 @@
     margin: 0;
     text-align: center;
     height: 110px;
-    width: 300px;/*неточно*/
+    /*width: 300px;неточно*/
+  }
+}
+
+.page-header__image {
+  width: 75px;
+  height: auto;
+  margin: 17px 0 0 25px;
+
+  @media (min-width: $tablets) {
+    width: 147px;
+    height: auto;
+    margin: 35px 0 0 -35px;
+  }
+
+  @media (min-width: $desktops) {
+    width: 150px;
+    height: auto;
   }
 }
