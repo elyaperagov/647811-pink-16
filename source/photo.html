@@ -11,7 +11,8 @@
       <div class="page-header__wrapper">
         <div class="page-header__logo" title="Главная">
           <picture>
-            <source class="page-header__image" media="(min-width: 640px)" srcset="img/logo-pink-white-tablet.svg" alt="Логотип Пинк">
+            <source class="page-header__image" media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg" alt="Логотип Пинк">
+            <source class="page-header__image" media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg" alt="Логотип Пинк">
             <img class="page-header__image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Пинк">
           </picture>
         </div>
@@ -73,7 +74,13 @@
           <div class="gallery__wrapper">
           <!--<ul class="gallery__list">  -->
           <div class="gallery__item">
-            <img src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фотография Левона">
+            <div class="gallery__picture-wrapper">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg, img/photo-car-desktop@2x.jpg">
+                <source media="(min-width: 640px)" srcset="img/photo-car-tablet@1x.jpg, img/photo-car-tablet@2x.jpg">
+                <img src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg" alt="Фотография Левона">
+              </picture>
+            </div>
             <div class="gallery post">
               <span class="post__author">Левон</span>
               <span class="post__time">(5 часов назад)</span>
@@ -88,7 +95,13 @@
             </div>
           </div>
           <div class="gallery__item">
-            <img src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фотография Антона">
+            <div class="gallery__picture-wrapper">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg, img/photo-drumset-desktop@2x.jpg">
+                <source media="(min-width: 640px)" srcset="img/photo-drumset-tablet@1x.jpg, img/photo-drumset-tablet@2x.jpg">
+                <img src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg" alt="Фотография Антона">
+              </picture>
+            </div>
             <div class="gallery post">
               <span class="post__author">Антон</span>
               <span class="post__time">(12 часов назад)</span>
@@ -103,7 +116,11 @@
             </div>
           </div>
           <div class="gallery__item">
-            <img src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фотография Бориса">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg, img/photo-window-desktop@2x.jpg">
+              <source media="(min-width: 640px)" srcset="img/photo-window-tablet@1x.jpg, img/photo-window-tablet@2x.jpg">
+              <img src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg" alt="Фотография Бориса">
+            </picture>
             <div class="gallery post">
               <!--<div class="post__wrapper">-->
                 <span class="post__author">Борис</span>
@@ -120,7 +137,11 @@
             </div>
           </div>
           <div class="gallery__item">
-            <img src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фотография Сергея">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg, img/photo-fair-desktop@2x.jpg">
+              <source media="(min-width: 640px)" srcset="img/photo-fair-tablet@1x.jpg, img/photo-fair-tablet@2x.jpg">
+              <img src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg" alt="Фотография Бориса">
+            </picture>
             <div class="gallery post">
               <span class="post__author">Сергей</span>
               <span class="post__time">(25 часов назад)</span>
@@ -135,7 +156,11 @@
             </div>
           </div>
           <div class="gallery__item">
-            <img src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фотография Максима">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg, img/photo-pov-desktop@2x.jpg">
+              <source media="(min-width: 640px)" srcset="img/photo-pov-tablet@1x.jpg, img/photo-pov-tablet@2x.jpg">
+              <img src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg" alt="Фотография Бориса">
+            </picture>
             <div class="gallery post">
               <span class="post__author">Максим</span>
               <span class="post__time">(40 часов назад)</span>
@@ -150,7 +175,11 @@
             </div>
           </div>
           <div class="gallery__item">
-            <img src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фотография Надежды">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg, img/photo-wing-desktop@2x.jpg">
+              <source media="(min-width: 640px)" srcset="img/photo-wing-tablet@1x.jpg, img/photo-wing-tablet@2x.jpg">
+              <img src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg" alt="Фотография Бориса">
+            </picture>
             <div class="gallery post">
               <span class="post__author">Надежда</span>
               <span class="post__time">(45 часов назад)</span>

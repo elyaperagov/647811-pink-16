@@ -25,11 +25,12 @@
   @media (min-width: $tablets) {
     width: 147px;
     height: auto;
-    margin: 35px 0 0 -35px;
+    margin: 26px 0 0 4px;
   }
 
   @media (min-width: $desktops) {
     width: 150px;
     height: auto;
+    margin: 26px 0;
   }
 }

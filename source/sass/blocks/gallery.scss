@@ -90,7 +90,8 @@
   max-width: 280px;
 
   @media (min-width: $tablets) {
-    margin-right: 40px;/*ВРЕМЕННО*/
+    max-width: 300px;
+    margin-right: 20px;
 
     &:nth-child(even) {
       margin-right: 0;
@@ -98,15 +99,25 @@
   }
 
   @media (min-width: $desktops) {
-    margin-right: 40px;/*ВРЕМЕННО*/
+    margin-right: 20px;
 
     &:nth-child(even) {
-      margin-right: 40px;
+      margin-right: 20px;
     }
 
     &:nth-child(3n) {
       margin-right: 0;
     }
+  }
+}
+
+.gallery__picture-wrapper {
+  width: 280px;
+  height: auto;
+
+  @media (min-width: $tablets) {
+    width: 300px;
+    height: auto;
   }
 }
 
