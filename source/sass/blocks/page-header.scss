@@ -15,6 +15,15 @@
   }
 }
 
+.page-header--absolute {
+  position: absolute;
+}
+
+.page-header--relative {
+  position: relative;
+  background-color: $main-background;
+}
+
 .page-header__wrapper {
   position: relative;
   display: flex;

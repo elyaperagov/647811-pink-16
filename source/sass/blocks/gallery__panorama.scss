@@ -24,6 +24,28 @@
     background-color: #d22856;
     color: white;
     cursor: pointer;
+
+    @media (min-width: $tablets) {
+      top: 60px;
+      left: 77%;
+    }
+  }
+}
+
+.gallery__panorama img {
+  margin: 0 auto;
+  display: block;
+  height: 140px;
+  max-width: 100%;
+
+  @media (min-width: $tablets) {
+    height: auto;
+    max-width: 100%;
+  }
+
+  @media (min-width: $desktops) {
+    height: auto;
+    max-width: 100%;
   }
 }
 
