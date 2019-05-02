@@ -10,8 +10,11 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <div class="page-header__logo" title="Главная">
-          <img class="page-header__image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Пинк">
-          <!--<img class="page-header__image" src="img/logo-pink-white-tablet.svg" width="147" height="40" alt="Логотип Пинк">-->
+          <picture>
+            <source class="page-header__image" media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg" alt="Логотип Пинк">
+            <source class="page-header__image" media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg" alt="Логотип Пинк">
+            <img class="page-header__image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Пинк">
+          </picture>
         </div>
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button"><span>Открыть меню</span></button>
