@@ -18,12 +18,41 @@
     }*/
   }
 }
+.pidor {
+  display: none;
+}
 
 .page-footer__logo {
   display: block;
   text-align: center;
+  cursor: pointer;
 }
 
+.page-footer__logo:hover .page-footer__logo--letters {
+  fill: #d22856;
+}
+
+.page-footer__logo:active .page-footer__logo--letters {
+  fill: #bec2c7;
+}
+
+.page-footer__logo:active .page-footer__logo--glasses {
+  fill: #f1becc;
+}
+
+.page-footer__logo-mobile {
+  @media (min-width: $desktops) {
+    display: none;
+  }
+}
+
+.page-footer__logo-desktop {
+  display: none;
+
+  @media (min-width: $desktops) {
+    display: block;
+  }
+}
 
 .social__list {
   @include list;
