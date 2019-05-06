@@ -70,6 +70,15 @@
   background-color: transparent;
   padding: 13px 35px;
 
+  &:hover {
+    background-color: white;
+    color: #d22856;
+  }
+
+  &:active {
+    color: #f1becc;
+  }
+
   @media (min-width: $tablets) {
     padding: 12px 45px;
     font-size: 18px;
@@ -106,10 +115,14 @@
   margin-right: 16px;
   margin-left: 16px;
 }
-
+/*
 .download__item--iphone {
   background: url("../img/logo-apple.svg") no-repeat center center;
-  background-size: 47px 56px;
+  background-size: 50px 57px;
+}
+
+.download__item--android {
+  margin-top: 5px;
 }
 
 .download__item--android {
@@ -121,6 +134,7 @@
   background: url("../img/logo-microsoft.svg") no-repeat center center;
   background-size: 44px 41px;
 }
+*/
 
 .download__app {
   align-items: center;

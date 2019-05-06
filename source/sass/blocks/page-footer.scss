@@ -19,10 +19,6 @@
   }
 }
 
-.page-footer__logo {
-  display: block;
-  text-align: center;
-}
 
 .social__list {
   @include list;
@@ -47,15 +43,29 @@
   height: 50px;
   border: 3px solid #e9ebec;
   border-radius: 50%;
+  cursor: pointer;
 
   &:nth-child(1),
   &:nth-child(2) {
     margin-right: 15px;
   }
+
+  &:hover {
+    border: 3px solid #283645;
+  }
+
+  &:active {
+    border: 3px solid #e9ebec;
+  }
+
+  &:active .social__link {
+    fill: #f1becc;
+  }
 }
 
 .social__link {
   position: relative;
+  fill: #d22856;
 
   &--twitter {
     top: 15px;
@@ -75,7 +85,6 @@
 
 .social__icon {
   position: absolute;
-  fill: #d22856;
 }
 
 .copyright {
@@ -100,4 +109,12 @@
 
 .copyright__icon {
   fill: #d22856;
+
+  &:hover {
+    fill: #283645;
+  }
+
+  &:active {
+    fill: #bec2c7;
+  }
 }
