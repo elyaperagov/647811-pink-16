@@ -70,6 +70,15 @@
   background-color: transparent;
   padding: 13px 35px;
 
+  &:hover {
+    background-color: white;
+    color: #d22856;
+  }
+
+  &:active {
+    color: #f1becc;
+  }
+
   @media (min-width: $tablets) {
     padding: 12px 45px;
     font-size: 18px;
