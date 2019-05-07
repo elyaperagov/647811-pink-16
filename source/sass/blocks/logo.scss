@@ -41,7 +41,11 @@
   cursor: pointer;
 }
 
-.page-header__logo:hover .page-header__image--letters {
+.page-header__letters {
+  fill: #ffffff;
+}
+
+.page-header__image:hover .page-header__letters {
   fill: #d22856;
 }
 
@@ -85,25 +89,39 @@
   cursor: pointer;
 }
 
-.page-footer__logo:hover .page-footer__logo--letters {
+
+.page-footer__letters {
+  fill: #283645;
+}
+
+.page-footer__glasses {
+  fill: #D22856;
+}
+
+.page-footer__glasses--dots {
+  fill: #283645;
+}
+
+.page-footer__logo:hover .page-footer__letters {
   fill: #d22856;
 }
 
-.page-footer__logo:active .page-footer__logo--letters {
+.page-footer__logo:active .page-footer__letters {
   fill: #bec2c7;
 }
 
-.page-footer__logo:active .page-footer__logo--glasses {
+.page-footer__logo:active .page-footer__glasses,
+.page-footer__logo:active .page-footer__glasses--dots {
   fill: #f1becc;
 }
 
-.page-footer__logo-mobile {
+.page-footer__logo--mobile {
   @media (min-width: $desktops) {
     display: none;
   }
 }
 
-.page-footer__logo-desktop {
+.page-footer__logo--desktop {
   display: none;
 
   @media (min-width: $desktops) {
