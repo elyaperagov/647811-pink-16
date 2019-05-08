@@ -9,28 +9,36 @@
 
 .gallery__panorama {
   text-align: center;
+}
+
+.gallery__panorama--image {
   position: relative;
+}
 
-  &--button {
-    position: absolute;
-    font-size: 12px;
-    line-height: 24px;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 6px 20px;
-    top: 0;
-    left: 50%;
-    display: block;
-    background-color: #d22856;
-    color: white;
-    cursor: pointer;
+.gallery__panorama--button {
+  position: absolute;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 6px 20px;
+  top: 0;
+  left: 50%;
+  display: block;
+  background-color: #d22856;
+  color: white;
+  cursor: pointer;
 
-    @media (min-width: $tablets) {
-      top: 60px;
-      left: 77%;
-    }
+  @media (min-width: $tablets) {
+    transform: translateX(170px);
+    top: 55px;
+  }
+
+  @media (min-width: $desktops) {
+    transform: translateX(330px);
   }
 }
+
 
 .gallery__panorama img {
   margin: 0 auto;
