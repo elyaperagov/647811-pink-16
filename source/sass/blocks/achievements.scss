@@ -8,29 +8,28 @@
   color: #d22856;
   text-transform: uppercase;
   text-align: center;
-  padding: 35px 20px;
+  padding: 35px 20px 33px;
   line-height: 17px;
 }
 
 .achievements__item {
   position: relative;
-  padding: 30px 0 20px 0;
+  padding: 12px 0 36px 0;
   margin: 0 0 0 -15px;
 }
 
 .achievements__item span {
-  padding-left: 40px;
+  padding-left: 30px;
+  vertical-align: super;
 }
 
 .achievements__checkbox + label:before {
   content: "";
   position: relative;
-  width: 35px;
-  height: 35px;
   background-color: white;
   border: 2px solid #e5e5e5;
-  padding-left: 30px;
-  padding-top: 10px;
+  padding-left: 35px;
+  padding-top: 16px;
 }
 
 .achievements__checkbox:hover + label:before {
@@ -49,10 +48,15 @@
   background-image: url("../img/icon-yes-red.svg");
   background-repeat: no-repeat;
   z-index: 1;
-  left: 22px;
-  top: 27px;
+  left: 25px;
+  top: 18px;
 }
 
 .achievements__checkbox {
   opacity: 0;
+}
+
+.achievements__text {
+  font-size: 18px;
+  line-height: 30px;
 }
