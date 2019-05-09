@@ -1,7 +1,3 @@
-.main-competition__wrapper {
-  @include wrapper;
-}
-
 .main-competition__background {
   color: white;
   background-color: $main-background;
@@ -22,11 +18,22 @@
   }
 }
 
+.form__wrapper {
+  @include wrapper;
+}
+
 .form__data {
   @include list;
 }
 
 .main-competition__title {
+  @include wrapper;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+  text-align: center;
+  padding-top: 30px;
+
   @media (min-width: $tablets) {
     font-size: 50px;
     line-height: 60px;

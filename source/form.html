@@ -54,28 +54,73 @@
         <h1 class="visually-hidden">Конкурс на самое безбашенное путешествие с Пинк</h1>
         <p class="main-competition__title">Конкурс на самое безбашенное путешествие с Пинк</p>
       </div>
-      <div class="main-competition__wrapper">
-        <form class="form" action="https://echo.htmlacademy.ru" method="post">
+      <form class="form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="form__wrapper">
           <h2 class="form__title">
             Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
-            Пожалуйста, заполните форму ниже:
+            <!--Пожалуйста, заполните форму ниже:-->
           </h2>
-          <ul class="form__data form--personal">
+          <ul class="form__data personal">
+            <li class="personal__item">
+              <label class="personal__label" for="lastname">Фамилия</label><br>
+              <input class="personal__input" type="text" name="lastname" placeholder="Укажите фамилию*" id="lastname" required>
+            </li>
+            <li class="personal__item">
+              <label class="personal__label" for="name">Имя</label><br>
+              <input class="personal__input" type="text" name="name" placeholder="Введите ваше имя*" id="name" required>
+            </li>
+            <li class="personal__item">
+              <label class="personal__label" for="patronymic">Отчество:</label><br>
+              <input class="personal__input" type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
+            </li>
+          </ul>
+        </div>
+          <!--<ul class="form__data form--personal">
             <li class="form__item">
-              <label for="lastname">Фамилия</label><br>
+              <label class="form__item form__item--label" for="lastname">Фамилия</label><br>
               <input class="form__item form__item--personal" type="text" name="lastname" placeholder="Укажите фамилию*" id="lastname" required>
             </li>
             <li class="form__item">
-              <label for="name">Имя</label><br>
+              <label class="form__item form__item--label" for="name">Имя</label><br>
               <input class="form__item form__item--personal" type="text" name="name" placeholder="Введите ваше имя*" id="name" required>
             </li>
             <li class="form__item">
-              <label for="patronymic">Отчество:</label><br>
+              <label class="form__item form__item--label" for="patronymic">Отчество:</label><br>
               <input class="form__item form__item--personal" type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
             </li>
-          </ul>
-          <h2 class="form__title">Ваши безбашенные достижения в путешествии</h2>
-          <ul class="form__data form--achievements">
+          </ul>-->
+          <fieldset class="form__achievements-fieldset">
+            <div class="form__wrapper">
+              <legend class="form__achievements-legend">Ваши безбашенные достижения в путешествии</legend>
+              <ul class="form__data achievements">
+                <li class="achievements__item">
+                  <input class="achievements__checkbox" id="shark" type="checkbox" name="achievements" checked>
+                  <label for="shark"><span>Сделал селфи с акулой</span></label>
+                </li>
+                <li class="achievements__item">
+                  <input class="achievements__checkbox" id="beach" type="checkbox" name="achievements" checked>
+                  <label for="beach"><span>Обгорел на пляже</span></label>
+                </li>
+                <li class="achievements__item">
+                  <input class="achievements__checkbox" id="norris" type="checkbox" name="achievements">
+                  <label for="norris"><span>Видел Чака Норриса</span></label>
+                </li>
+                <li class="achievements__item">
+                  <input class="achievements__checkbox" id="souvenirs" type="checkbox" name="achievements">
+                  <label for="souvenirs"><span>Накупил сувениров</span></label>
+                </li>
+                <li class="achievements__item">
+                  <input class="achievements__checkbox" id="tower" type="checkbox" name="achievements" checked>
+                  <label for="tower"><span>Удержал башню</span></label>
+                </li>
+                <li class="achievements__item">
+                  <input class="achievements__checkbox" id="hotel" type="checkbox" name="achievements">
+                  <label for="hotel"><span>Разгромил отель</span></label>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+              <!--<ul class="form__data form--achievements">
             <li class="form__item">
               <input class="form__item form__item--checkbox" id="shark" type="checkbox" name="achievements" checked>
               <label for="shark">Сделал селфи с акулой</label>
@@ -110,7 +155,7 @@
               <label for="email">Адрес почты</label><br>
               <input class="form__item form__item--email" type="text" id="email" name="email" placeholder="Введите почту*">
             </li>
-          </ul>
+          </ul>-->
           <h2 class="form__title">С каким приложения путешествовали</h2>
           <ul class="form__data form--app">
             <li class="form__item">

@@ -1,0 +1,41 @@
+/* stylelint-disable */
+.personal {
+  margin-bottom: 43px;
+}
+.form h2 {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.form__title {
+  margin-top: 45px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.personal__label {
+  font-size: 14px;
+  line-height: 30px;
+  padding-left: 23px;
+  text-transform: uppercase;
+  color: #d22856;
+}
+
+.personal__item {
+  padding-top: 20px;
+}
+
+input[type="text"]::placeholder {
+  font-size: 19px;
+  line-height: 30px;
+}
+
+.personal__input {
+  padding: 20px;
+  margin-top: 5px;
+  width: 100%;
+  border: 2px solid #e5e5e5;
+  border-radius: 3px;
+}
