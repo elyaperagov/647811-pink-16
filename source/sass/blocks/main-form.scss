@@ -18,6 +18,10 @@
   }
 }
 
+.form {
+  margin-bottom: 50px;
+}
+
 .form__wrapper {
   @include wrapper;
 }
@@ -48,4 +52,15 @@
     padding-left: 155px;
     padding-right: 150px;
   }
+}
+
+.form__fieldset {
+  border: none;
+}
+
+.form__legend {
+  color: #d22856;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 17px;
 }

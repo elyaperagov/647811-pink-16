@@ -1,15 +1,10 @@
 /* stylelint-disable */
-.form__achievements-fieldset {
-  border: none;
+.form__achievements--fieldset {
   background-color: #f2f2f2;
 }
 
-.form__achievements-legend {
-  color: #d22856;
-  text-transform: uppercase;
-  text-align: center;
+.form__achievements--legend {
   padding: 35px 20px 33px;
-  line-height: 17px;
 }
 
 .achievements__item {
@@ -19,7 +14,7 @@
 }
 
 .achievements__item span {
-  padding-left: 30px;
+  padding-left: 47px;
   vertical-align: super;
 }
 
@@ -30,6 +25,7 @@
   border: 2px solid #e5e5e5;
   padding-left: 35px;
   padding-top: 16px;
+  left: 15px;
 }
 
 .achievements__checkbox:hover + label:before {
@@ -52,8 +48,13 @@
   top: 18px;
 }
 
+/*
 .achievements__checkbox {
   opacity: 0;
+}*/
+
+input[type="checkbox"] {
+  @include visually-hidden;
 }
 
 .achievements__text {

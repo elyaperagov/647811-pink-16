@@ -89,12 +89,12 @@
               <input class="form__item form__item--personal" type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
             </li>
           </ul>-->
-          <fieldset class="form__achievements-fieldset">
+          <fieldset class="form__fieldset form__achievements--fieldset">
             <div class="form__wrapper">
-              <legend class="form__achievements-legend">Ваши безбашенные достижения в путешествии</legend>
+              <legend class="form__legend form__achievements--legend">Ваши безбашенные достижения в путешествии</legend>
               <ul class="form__data achievements">
                 <li tabindex="0" class="achievements__item">
-                  <input class="achievements__checkbox" id="shark" type="checkbox" name="achievements" checked>
+                  <input class="achievements__checkbox visually-hidden" id="shark" type="checkbox" name="achievements" checked>
                   <label for="shark"><span class="achievements__text">Сделал селфи с акулой</span></label>
                 </li>
                 <li tabindex="0" class="achievements__item">
@@ -168,23 +168,36 @@
               </li>
             </ul>
           </div>
-          <fieldset class="form__radio-fieldset">
-          <legend class="form__radio-title">С каким приложения путешествовали</legend>
-          <ul class="form__data apps">
-            <li class="apps__item">
-              <input class="apps__radio" type="radio" id="ios" name="ios" value="ios" checked>
-              <label for="ios">Pink для iOS</label>
-            </li>
-            <li class="apps__item">
-              <input class="apps__radio" type="radio" id="Android" name="Android" value="android">
-              <label for="Android">Pink для Android</label>
-            </li>
-            <li class="form__item">
-              <input class="apps__radio" type="radio" id="Windows" name="Windows" value="windows">
-              <label for="Windows">Windows Phone</label>
-            </li>
-          </ul>
-        </fieldset>
+          <fieldset class="form__fieldset form__radio--fieldset">
+            <div class="form__wrapper">
+            <legend class="form__legend form__radio--legend">С каким приложением путешествовали?</legend>
+              <ul class="form__data apps">
+                <li class="apps__item">
+                  <input class="apps__radio" type="radio" id="ios" name="app" value="ios">
+                  <label for="ios"><span class="apps__text">Pink для iOS</span></label>
+                </li>
+                <li class="apps__item">
+                  <input class="apps__radio" type="radio" id="Android" name="app" value="android">
+                  <label for="Android"><span class="apps__text">Pink на Android</span></label>
+                </li>
+                <li class="apps__item">
+                  <input class="apps__radio" type="radio" id="Windows" name="app" value="windows">
+                  <label for="Windows"><span class="apps__text">Windows Phone</span></label>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+          <fieldset class="form__fieldset form__textarea--fieldset">
+            <div class="form__wrapper textarea">
+            <legend class="form__legend form__textarea--legend">Опишите свои эмоции</legend>
+              <textarea class="textarea__text" placeholder="Можно прям в красках, не стесняясь в выражениях" name="text">
+              </textarea>
+              <button class="textarea__button">
+                <span class="textarea__send-form">Отправить форму</span>
+              </button>
+              <div class="form__required">* — ОБЯЗАТЕЛЬНЫЕ ПОЛЯ</div>
+            </div>
+          </fieldset>
         </form>
       </div>
     </main>
