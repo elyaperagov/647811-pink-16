@@ -1,9 +1,23 @@
+.form__radio {
+  order: 2;
+}
+
 .form__radio--fieldset {
   background-color: #f2f2f2;
+
+  @media (min-width: $tablets) {
+    background-color: transparent;
+  }
 }
 
 .form__radio--legend {
   padding: 35px 20px 25px;
+
+  @media (min-width: $tablets) {
+    margin: -15px auto;
+    background-color: white;
+    padding: 0 20px;
+  }
 }
 
 input[type="radio"] {

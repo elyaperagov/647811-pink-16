@@ -1,19 +1,40 @@
 /* stylelint-disable */
-.personal {
-  margin-bottom: 43px;
+.form__personal {
+  order: 1;
 }
 
-.form h2 {
-  font-size: 14px;
-  line-height: 30px;
-  font-weight: 400;
-  text-align: center;
+.personal {
+  margin-bottom: 41px;
+  padding-top: 20px;
+
+  @media (min-width: $tablets) {
+    margin-bottom: 43px;
+  }
 }
 
 .form__title {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
   margin-top: 45px;
   margin-bottom: 15px;
   text-align: center;
+
+  @media (min-width: $tablets) {
+    font-size: 18px;
+    line-height: 30px;
+    margin: 93px auto 46px;
+    max-width: 80%;
+  }
+}
+
+.form__title--hidden {
+  display: none;
+
+  @media (min-width: $tablets) {
+    display: inline-block;
+    margin: 0 auto;
+  }
 }
 
 .personal__label {
@@ -22,10 +43,22 @@
   padding-left: 23px;
   text-transform: uppercase;
   color: #d22856;
+
+  @media (min-width: $tablets) {
+    margin-left: 0;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding-left: 0;
+  }
 }
 
 .personal__item {
-  padding-top: 20px;
+  margin-bottom: 17px;
+
+  @media (min-width: $tablets) {
+    display: flex;
+    margin-bottom: 47px;
+  }
 }
 
 input[type="text"]::placeholder {
@@ -34,11 +67,17 @@ input[type="text"]::placeholder {
 }
 
 .personal__input {
-  padding: 20px;
   margin-top: 5px;
   width: 100%;
   border: 2px solid #e5e5e5;
   border-radius: 3px;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 14px 20px 15px;
+}
+
+.form__personal-bottom {
+  order: 3;
 }
 
 .personal--bottom {
