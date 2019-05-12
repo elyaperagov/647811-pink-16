@@ -1,16 +1,56 @@
+.textarea {
+  @media (min-width: $tablets) {
+    margin: 0 auto;
+    width: 82%;
+    margin-bottom: 45px;
+  }
+}
 .form__textarea {
   order: 5;
+
+  @media (min-width: $tablets) {
+    margin-top: 40px;
+  }
 }
+
 .textarea__text {
   width: 100%;
   min-height: 203px;
   border: 2px solid #e5e5e5;
+  outline: none;
+
+  @media (min-width: $tablets) {
+    min-height: 195px;
+    margin-top: 20px;
+  }
+
+    &:hover {
+      border: 2px solid #283645;
+}
+
+    &:active,
+    &:focus {
+      border: 2px solid #d22856;
+  }
+}
+
+.form__personal--bottom {
+  padding: 0;
+}
+
+.form__textarea--fieldset {
+  padding: 0;
 }
 
 .form__textarea--legend {
-  margin-top: 35px;
+  padding-top: 38px;
   padding-bottom: 16px;
-  padding-left: 47px;
+
+
+  @media (min-width: $tablets) {
+    padding-left: 0;
+    padding-top: 13px;
+  }
 }
 
 textarea::placeholder {
@@ -18,24 +58,4 @@ textarea::placeholder {
   line-height: 30px;
   padding: 15px 17px;
   letter-spacing: 0.5px;
-}
-
-.textarea__button {
-  background-color: #2aab6d;
-  border: none;
-  border-radius: 3px;
-  margin-top: 40px;
-  padding: 17px 50px;
-}
-
-.textarea__send-form {
-  font-size: 18px;
-  line-height: 30px;
-  color: white;
-  text-transform: uppercase;
-}
-
-.form__required {
-  margin-top: 38px;
-  padding: 0 47px;
 }

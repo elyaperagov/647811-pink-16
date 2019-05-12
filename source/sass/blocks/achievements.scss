@@ -2,23 +2,40 @@
 .form__achievements {
   order: 4;
   background-color: #f2f2f2;
+  padding-bottom: 7px;
+
+  @media (min-width: $tablets) {
+    background-color: white;
+    margin-top: 15px;
+  }
 }
 
+.achievements {
+  @media (min-width:$tablets) {
+    margin-bottom: 10px;
+  }
+}
 
+.form__achievements--fieldset {
+  padding: 0;
+}
 
 .form__achievements--legend {
-  padding: 35px 20px 33px;
+  padding: 38px 15px 35px;
+
+  @media (min-width: $tablets) {
+    padding: 45px 15px 38px;
+  }
 }
 
 .achievements__item {
   position: relative;
   padding: 12px 0 36px 0;
-  margin: 0 0 0 -15px;
-}
+  margin: 0 0 0 -16px;
 
-.achievements__item span {
-  padding-left: 47px;
-  vertical-align: super;
+  @media (min-width: $tablets) {
+    margin: 0 0 0 40px;
+  }
 }
 
 .achievements__checkbox + label:before {
@@ -61,6 +78,13 @@ input[type="checkbox"] {
 }
 
 .achievements__text {
+  padding-left: 47px;
+  vertical-align: super;
   font-size: 18px;
   line-height: 30px;
+  white-space: nowrap;
+
+  @media (min-width: $tablets) {
+    padding-left: 36px;
+  }
 }

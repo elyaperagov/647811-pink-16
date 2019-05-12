@@ -8,7 +8,7 @@
   padding-top: 20px;
 
   @media (min-width: $tablets) {
-    margin-bottom: 43px;
+    margin-bottom: 0;
   }
 }
 
@@ -46,7 +46,7 @@
 
   @media (min-width: $tablets) {
     margin-left: 0;
-    margin-right: 20px;
+    margin-right: 22px;
     margin-top: 20px;
     padding-left: 0;
   }
@@ -58,6 +58,52 @@
   @media (min-width: $tablets) {
     display: flex;
     margin-bottom: 47px;
+  }
+}
+
+@media (min-width: $tablets) {
+.personal__item--bottom {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 23px;
+}
+
+.personal__input--wrapper {
+  order: 1;
+  width: 91%;
+
+  position: relative;
+
+  @media (min-width: $tablets) {
+    padding-left: 55px;
+    padding-right: 60px;
+  }
+}
+
+.personal__input--phone::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 63px;
+  background: #e5e5e5 url("../img/icon-phone.svg") no-repeat center;
+  right: 0;
+  top: 7px;
+}
+
+.personal__input--email::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 63px;
+  background: #e5e5e5 url("../img/icon-mail.svg") no-repeat center;
+  right: 0;
+  top: 7px;
+}
+
+.personal__label--wrapper {
+  order: 2;
+  padding-left: 65px;
+  padding-top: 10px;
   }
 }
 
@@ -74,10 +120,35 @@ input[type="text"]::placeholder {
   font-size: 18px;
   line-height: 30px;
   padding: 14px 20px 15px;
+  outline: none;
+
+    &:hover {
+    border: 2px solid #283645;
+  }
+
+    &:active,
+    &:focus {
+      border: 2px solid #d22856;
+  }
+}
+
+.form__personal--bottom {
+  padding: 0;
 }
 
 .form__personal-bottom {
   order: 3;
+  padding: 0;
+
+  @media (min-width: $tablets) {
+  margin-top: 47px;
+  }
+}
+
+.personal__input--bottom {
+  @media (min-width: $tablets) {
+    margin-top: 7px;
+  }
 }
 
 .personal--bottom {
