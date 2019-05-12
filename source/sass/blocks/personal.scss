@@ -151,6 +151,13 @@ input[type="text"]::placeholder {
   }
 }
 
+.personal__label--bottom {
+  @media (min-width: $tablets) {
+  margin-left: 10px;
+  }
+}
+
+
 .personal--bottom {
   margin-top: 10px;
 }
