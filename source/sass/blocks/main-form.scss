@@ -2,6 +2,7 @@
   @media (min-width: $tablets) {
     display: flex;
     flex-direction: column;
+    margin-bottom: 48px;
   }
 
   @media (min-width: $desktops) {
@@ -37,7 +38,7 @@
   margin-bottom: 60px;
 
   @media (min-width: $tablets) {
-    margin-bottom: 48px;
+    @include wrapper;
   }
 }
 
@@ -86,7 +87,7 @@
   border: none;
 
   @media (min-width: $tablets) {
-    border: 2px solid #f2f2f2;;
+    border: 2px solid #f2f2f2;
   }
 }
 

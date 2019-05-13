@@ -12,8 +12,8 @@
     width: 435px;
   }
 
-    &--fieldset {
-      padding: 0;
+  &--fieldset {
+    padding: 0;
 
     @media (min-width: $tablets) {
       padding-top: 49px;
@@ -26,8 +26,8 @@
     }
   }
 
-    &--legend {
-      padding: 38px 20px 28px;
+  &--legend {
+    padding: 38px 20px 28px;
 
     @media (min-width: $tablets) {
       margin: -15px auto;
@@ -79,9 +79,9 @@ input[type="radio"] {
   font-size: 18px;
   line-height: 30px;
   padding-left: 70px;
-/*  vertical-align: text-top;*/
 
   @media (min-width: $tablets) {
     padding-left: 60px;
+    vertical-align: text-top;
   }
 }

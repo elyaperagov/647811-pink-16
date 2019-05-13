@@ -4,7 +4,7 @@
 
 .contacts {
   @media (min-width: $tablets) {
-  padding-top: 35px;
+    padding-top: 35px;
   }
 }
 
@@ -14,7 +14,7 @@
   margin: 30px 0 20px 0;
 
   @media (min-width: $tablets) {
-    margin: 46px 0 15px 0;
+    margin: 42px 0 15px 0;
   }
 }
 
@@ -40,11 +40,10 @@
 .contacts__item {
   padding-bottom: 20px;
 
-@media (min-width: $tablets) {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 23px;
-
+  @media (min-width: $tablets) {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 23px;
   }
 }
 
@@ -63,50 +62,49 @@ input[type="text"]::placeholder {
   padding: 14px 20px 15px;
   outline: none;
 
-    &:hover {
+  &:hover {
     border: 2px solid #283645;
   }
 
-    &:active,
-    &:focus {
-      border: 2px solid #d22856;
+  &:active,
+  &:focus {
+    border: 2px solid #d22856;
   }
 }
 
 @media (min-width: $tablets) {
-.contacts__input--wrapper {
-  order: 1;
-  width: 91%;
-
-  position: relative;
+  .contacts__input--wrapper {
+    order: 1;
+    width: 91%;
+    position: relative;
     padding-left: 55px;
     padding-right: 60px;
   }
 
-.contacts__input--phone::before {
-  content: "";
-  position: absolute;
-  width: 60px;
-  height: 63px;
-  background: #e5e5e5 url("../img/icon-phone.svg") no-repeat center;
-  right: 0;
-  top: 7px;
-}
+  .contacts__input--phone::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 63px;
+    background: #e5e5e5 url("../img/icon-phone.svg") no-repeat center;
+    right: 0;
+    top: 7px;
+  }
 
-.contacts__input--email::before {
-  content: "";
-  position: absolute;
-  width: 60px;
-  height: 63px;
-  background: #e5e5e5 url("../img/icon-mail.svg") no-repeat center;
-  right: 0;
-  top: 7px;
-}
+  .contacts__input--email::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 63px;
+    background: #e5e5e5 url("../img/icon-mail.svg") no-repeat center;
+    right: 0;
+    top: 7px;
+  }
 
-.contacts__label--wrapper {
-  order: 2;
-  padding-left: 65px;
-  padding-top: 10px;
+  .contacts__label--wrapper {
+    order: 2;
+    padding-left: 65px;
+    padding-top: 10px;
   }
 }
 
