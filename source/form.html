@@ -163,7 +163,32 @@
               <input class="form__item form__item--email" type="text" id="email" name="email" placeholder="Введите почту*">
             </li>
           </ul>-->
-          <div class="form__personal-bottom">
+          <div class="form__contacts">
+            <div class="form__wrapper">
+              <fieldset class="form__fieldset form__contacts--fieldset">
+              <legend class="form__legend form__title--hidden ">Контактная информация:</legend>
+                <ul class="form__data contacts">
+                  <li class="contacts__item">
+                    <div class="contacts__label--wrapper">
+                      <label class="contacts__label contacts__label--bottom" for="lastname">Номер телефона</label><br>
+                    </div>
+                    <div class="contacts__input--wrapper contacts__input--phone">
+                      <input class="contacts__input contacts__input--bottom" type="text" name="phone" placeholder="Номер, пожалуйста" id="phone">
+                    </div>
+                  </li>
+                  <li class="contacts__item contacts__item--bottom">
+                    <div class="contacts__label--wrapper">
+                    <label class="contacts__label contacts__label--bottom" for="name">Адрес почты</label><br>
+                    </div>
+                    <div class="contacts__input--wrapper contacts__input--email">
+                    <input class="contacts__input contacts__input--bottom" type="text" name="e-mail" placeholder="Введите почту*" id="e-mail" required>
+                    </div>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+          </div>
+          <!--<div class="form__personal-bottom">
             <div class="form__wrapper">
               <fieldset class="form__fieldset form__personal--bottom">
               <legend class="form__legend form__title--hidden ">Контактная информация:</legend>
@@ -187,7 +212,7 @@
                 </ul>
               </fieldset>
             </div>
-          </div>
+          </div>-->
           <div class="form__radio">
             <div class="form__wrapper">
               <fieldset class="form__fieldset form__radio--fieldset">

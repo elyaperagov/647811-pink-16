@@ -1,6 +1,10 @@
 /* stylelint-disable */
 .form__personal {
   order: 1;
+
+  @media (min-width: $desktops) {
+    width: 435px;
+  }
 }
 
 .personal {
@@ -9,6 +13,10 @@
 
   @media (min-width: $tablets) {
     margin-bottom: 0;
+  }
+
+  @media (min-width: $desktops) {
+    width: 435px;
   }
 }
 
@@ -61,57 +69,6 @@
   }
 }
 
-@media (min-width: $tablets) {
-.personal__item--bottom {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 23px;
-}
-
-.personal__input--wrapper {
-  order: 1;
-  width: 91%;
-
-  position: relative;
-
-  @media (min-width: $tablets) {
-    padding-left: 55px;
-    padding-right: 60px;
-  }
-}
-
-.personal__input--phone::before {
-  content: "";
-  position: absolute;
-  width: 60px;
-  height: 63px;
-  background: #e5e5e5 url("../img/icon-phone.svg") no-repeat center;
-  right: 0;
-  top: 7px;
-}
-
-.personal__input--email::before {
-  content: "";
-  position: absolute;
-  width: 60px;
-  height: 63px;
-  background: #e5e5e5 url("../img/icon-mail.svg") no-repeat center;
-  right: 0;
-  top: 7px;
-}
-
-.personal__label--wrapper {
-  order: 2;
-  padding-left: 65px;
-  padding-top: 10px;
-  }
-}
-
-input[type="text"]::placeholder {
-  font-size: 19px;
-  line-height: 30px;
-}
-
 .personal__input {
   margin-top: 5px;
   width: 100%;
@@ -130,34 +87,4 @@ input[type="text"]::placeholder {
     &:focus {
       border: 2px solid #d22856;
   }
-}
-
-.form__personal--bottom {
-  padding: 0;
-}
-
-.form__personal-bottom {
-  order: 3;
-  padding: 0;
-
-  @media (min-width: $tablets) {
-  margin-top: 47px;
-  }
-}
-
-.personal__input--bottom {
-  @media (min-width: $tablets) {
-    margin-top: 7px;
-  }
-}
-
-.personal__label--bottom {
-  @media (min-width: $tablets) {
-  margin-left: 10px;
-  }
-}
-
-
-.personal--bottom {
-  margin-top: 10px;
 }
