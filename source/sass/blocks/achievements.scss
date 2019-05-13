@@ -13,6 +13,12 @@
   @media (min-width:$tablets) {
     margin-bottom: 10px;
   }
+
+  @media (min-width:$desktops) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .form__achievements--fieldset {
