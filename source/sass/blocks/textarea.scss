@@ -10,7 +10,7 @@
   order: 5;
 
   @media (min-width: $tablets) {
-    margin-top: 40px;
+    margin-top: 38px;
   }
 }
 
@@ -47,10 +47,11 @@
   padding-top: 38px;
   padding-bottom: 16px;
 
-
   @media (min-width: $tablets) {
-    padding-left: 0;
+    padding-left: 24px;
+    padding-right: 24px;
     padding-top: 13px;
+    margin-left: 190px;
   }
 }
 

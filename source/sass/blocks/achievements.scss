@@ -29,7 +29,8 @@
   padding: 38px 15px 35px;
 
   @media (min-width: $tablets) {
-    padding: 45px 15px 38px;
+    padding: 45px 24px 38px;
+    margin-left: 95px;
   }
 }
 
@@ -72,11 +73,6 @@
   left: 25px;
   top: 18px;
 }
-
-/*
-.achievements__checkbox {
-  opacity: 0;
-}*/
 
 input[type="checkbox"] {
   @include visually-hidden;

@@ -10,6 +10,8 @@
 
   @media (min-width: $desktops) {
     width: 435px;
+    margin-left: 70px;
+    margin-top: 25px;
   }
 
   &--fieldset {
@@ -30,15 +32,27 @@
     padding: 38px 20px 28px;
 
     @media (min-width: $tablets) {
-      margin: -15px auto;
+      margin: -15px 0;
       background-color: white;
-      padding: 0 20px;
+      padding: 0 24px;
+      margin-left: 65px;
+    }
+
+    @media (min-width: $desktops) {
+      transform: translateX(-5px);
+      margin-left: 0;
     }
   }
 }
 
 input[type="radio"] {
   @include visually-hidden;
+}
+
+.apps {
+  @media (min-width: $desktops) {
+    margin-left: 13px;
+  }
 }
 
 .apps__item {

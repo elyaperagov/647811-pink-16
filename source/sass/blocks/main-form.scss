@@ -40,10 +40,19 @@
   @media (min-width: $tablets) {
     @include wrapper;
   }
+
+  @media (min-width: $desktops) {
+    @include wrapper;
+  }
 }
 
 .form__wrapper {
   @include wrapper;
+
+  @media (min-width: $tablets) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .form__data {
@@ -94,6 +103,39 @@
 .form__legend {
   color: #d22856;
   text-transform: uppercase;
-  text-align: center;
   line-height: 17px;
+  text-align: center;
+
+  @media (min-width: $tablets) {
+    text-align: unset;
+  }
+
+  @media (min-width: $tablets) {
+    text-align: center;
+  }
+}
+
+.form__title {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  margin-top: 45px;
+  margin-bottom: 15px;
+  text-align: center;
+
+  @media (min-width: $tablets) {
+    font-size: 18px;
+    line-height: 30px;
+    padding-left: 40px;
+    padding-right: 80px;
+    margin: 93px auto 46px;
+  }
+}
+
+.form__title--main {
+  @media (min-width: $desktops) {
+    transform: translateX(-10px);
+    padding-left: 80px;
+    padding-right: 80px;
+  }
 }

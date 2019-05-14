@@ -17,23 +17,12 @@
 
   @media (min-width: $desktops) {
     width: 435px;
+    padding-top: 33px;
   }
 }
 
-.form__title {
-  font-size: 14px;
-  line-height: 30px;
-  font-weight: 400;
-  margin-top: 45px;
-  margin-bottom: 15px;
-  text-align: center;
-
-  @media (min-width: $tablets) {
-    font-size: 18px;
-    line-height: 30px;
-    margin: 93px auto 46px;
-    max-width: 80%;
-  }
+.form__title--span {
+  padding: 0;
 }
 
 .form__title--hidden {
@@ -55,7 +44,7 @@
   @media (min-width: $tablets) {
     margin-left: 0;
     margin-right: 22px;
-    margin-top: 20px;
+    margin-top: 22px;
     padding-left: 0;
   }
 }

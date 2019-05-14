@@ -43,12 +43,14 @@
 }
 
 .send {
-  @include wrapper;
   margin-top: 0;
 
   @media (min-width: $tablets) {
     order: 6;
-    display: flex;
-    margin-top: 23px;
+    margin-top: 25px;
   }
+}
+
+.send__form {
+  display: flex;
 }

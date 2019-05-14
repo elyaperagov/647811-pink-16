@@ -56,9 +56,9 @@
       </div>
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
         <div class="form__wrapper">
-          <p class="form__title">
+          <p class="form__title form__title--main">
             Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
-            <span class="form__title form__title--hidden">Пожалуйста, заполните форму ниже:</span>
+            <span class="form__title form__title--span form__title--hidden">Пожалуйста, заполните форму ниже:</span>
           </p>
         </div>
           <div class="form__flex">
@@ -166,22 +166,22 @@
           <div class="form__contacts">
             <div class="form__wrapper">
               <fieldset class="form__fieldset form__contacts--fieldset">
-              <legend class="form__legend form__title--hidden ">Контактная информация:</legend>
+              <legend class="form__legend form__contacts--legend form__legend--hidden">Контактная информация:</legend>
                 <ul class="form__data contacts">
                   <li class="contacts__item">
-                    <div class="contacts__label--wrapper">
-                      <label class="contacts__label contacts__label--bottom" for="lastname">Номер телефона</label><br>
+                    <div class="contacts__label-wrapper">
+                      <label class="contacts__label" for="lastname">Номер телефона</label><br>
                     </div>
-                    <div class="contacts__input--wrapper contacts__input--phone">
-                      <input class="contacts__input contacts__input--bottom" type="text" name="phone" placeholder="Номер, пожалуйста" id="phone">
+                    <div class="contacts__input contacts__input--phone">
+                      <input class="contacts__input-text " type="text" name="phone" placeholder="Номер, пожалуйста" id="phone">
                     </div>
                   </li>
                   <li class="contacts__item">
-                    <div class="contacts__label--wrapper">
-                    <label class="contacts__label contacts__label--bottom" for="name">Адрес почты</label><br>
+                    <div class="contacts__label-wrapper">
+                    <label class="contacts__label" for="name">Адрес почты</label><br>
                     </div>
-                    <div class="contacts__input--wrapper contacts__input--email">
-                    <input class="contacts__input contacts__input--bottom" type="text" name="e-mail" placeholder="Введите почту*" id="e-mail" required>
+                    <div class="contacts__input contacts__input--email">
+                      <input class="contacts__input-text" type="text" name="e-mail" placeholder="Введите почту*" id="e-mail" required>
                     </div>
                   </li>
                 </ul>
@@ -239,18 +239,19 @@
               <fieldset class="form__fieldset form__textarea--fieldset">
                 <legend class="form__legend form__textarea--legend">Опишите свои эмоции</legend>
                 <div class="textarea">
-                  <textarea class="textarea__text" placeholder="Можно прям в красках, не стесняясь в выражениях" name="text">
-                  </textarea>
+                  <textarea class="textarea__text" placeholder="Можно прям в красках, не стесняясь в выражениях" name="text"></textarea>
                   </div>
                 </fieldset>
             </div>
           </div>
           <div class="send">
+            <div class="form__wrapper send__form">
             <button class="send__button">
               <span class="send__desc">Отправить форму</span>
             </button>
             <div class="send__required">* — ОБЯЗАТЕЛЬНЫЕ ПОЛЯ</div>
           </div>
+        </div>
         </div>
       </form>
     </main>
