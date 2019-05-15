@@ -1,0 +1,40 @@
+.competition__desc {
+  @include wrapper;
+  text-align: center;
+}
+
+.competition__desc--paragraph {
+  font-size: 14px;
+  line-height: 30px;
+  padding-top: 48px;
+  padding-bottom: 14px;
+  margin: 0;
+  text-align: center;
+
+  @media (min-width: $tablets) {
+    font-size: 18px;
+    line-height: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 90px;
+    padding-bottom: 45px;
+  }
+
+  @media (min-width: $desktops) {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 72px;
+  }
+}
+
+.competition__desc--span {
+  padding: 0;
+}
+
+.competition__desc--hidden {
+  display: none;
+
+  @media (min-width: $tablets) {
+    display: inline;
+  }
+}

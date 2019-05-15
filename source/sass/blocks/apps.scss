@@ -1,17 +1,13 @@
 .form__radio {
   background-color: #f2f2f2;
   order: 2;
-  padding-bottom: 13px;
 
   @media (min-width: $tablets) {
-    margin-top: 10px;
     background-color: white;
   }
 
   @media (min-width: $desktops) {
     width: 435px;
-    margin-left: 70px;
-    margin-top: 25px;
   }
 
   &--fieldset {
@@ -25,6 +21,7 @@
 
     @media (min-width: $desktops) {
       width: 435px;
+      padding-bottom: 10px;
     }
   }
 
@@ -58,6 +55,10 @@ input[type="radio"] {
 .apps__item {
   position: relative;
   padding: 11px 0 34px 0;
+
+  &:last-child {
+    padding-bottom: 48px;
+  }
 }
 
 .apps__radio + label::before {

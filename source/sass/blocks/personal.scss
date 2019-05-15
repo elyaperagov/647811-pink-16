@@ -8,31 +8,20 @@
 }
 
 .personal {
-  margin-bottom: 41px;
+  padding-bottom: 25px;
   padding-top: 20px;
 
   @media (min-width: $tablets) {
-    margin-bottom: 0;
+  /*  margin-bottom: 0;*/
   }
 
   @media (min-width: $desktops) {
     width: 435px;
-    padding-top: 33px;
+    padding-bottom: 0;
+    padding-top: 10px;
   }
 }
 
-.form__title--span {
-  padding: 0;
-}
-
-.form__title--hidden {
-  display: none;
-
-  @media (min-width: $tablets) {
-    display: inline-block;
-    margin: 0 auto;
-  }
-}
 
 .personal__label {
   font-size: 14px;
@@ -50,11 +39,15 @@
 }
 
 .personal__item {
-  margin-bottom: 17px;
+  padding-bottom: 17px;
 
   @media (min-width: $tablets) {
     display: flex;
-    margin-bottom: 47px;
+    padding-bottom: 47px;
+
+    &:last-child {
+      padding-bottom: 35px;
+    }
   }
 }
 
