@@ -7,9 +7,17 @@
   }
 }*/
 
+.form__legend--hidden {
+  display: none;
+
+  @media (min-width: $tablets) {
+    display: inline;
+  }
+}
+
 .form__container {
   @media (max-width: $mobiles-max) {
-    @include container-phones(20px);
+    @include container-phones;
   }
 }
 
@@ -33,6 +41,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 0;
   }
 }
 

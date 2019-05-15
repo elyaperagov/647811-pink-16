@@ -39,14 +39,6 @@
   }
 }
 
-.form__legend--hidden {
-  display: none;
-
-  @media (min-width: $tablets) {
-    display: inline-block;
-  }
-}
-
 input[type="text"]::placeholder {
   font-size: 19px;
   line-height: 30px;

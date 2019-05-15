@@ -1,8 +1,14 @@
 .textarea {
   @media (min-width: $tablets) {
     margin: 0 auto;
-    width: 82%;
-    margin-bottom: 45px;
+    width: 100%;
+    padding-bottom: 45px;
+    padding-left: 58px;
+    padding-right: 58px;
+  }
+
+  @media (min-width: $desktops) {
+    padding-bottom: 38px;
   }
 }
 
@@ -11,6 +17,11 @@
 
   @media (min-width: $tablets) {
     margin-top: 45px;
+    width: 100%;
+  }
+
+  @media (min-width: $desktops) {
+    margin-top: 43px;
     width: 100%;
   }
 }
@@ -23,6 +34,11 @@
 
   @media (min-width: $tablets) {
     min-height: 195px;
+    margin-top: 20px;
+  }
+
+  @media (min-width: $desktops) {
+    min-height: 125px;
     margin-top: 20px;
   }
 
