@@ -1,0 +1,262 @@
+
+
+.upload__container-title {
+  @include wrapper;
+}
+
+.upload__title {
+  text-align: center;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  margin-top: 22px;
+  margin-bottom: 42px;
+
+
+  @media (min-width: $tablets) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.photo-upload {
+  background-color: #f2f2f2;
+}
+
+.photo-upload__form {
+  @media (min-width: $tablets) {
+    @include wrapper;
+    background-color: #f2f2f2;
+    display: flex;
+  }
+}
+
+.photo-upload__flex {
+  @media (min-width: $tablets) {
+    padding-top: 40px;
+    padding-bottom: 54px;
+    margin-left: 45px;
+    width: 260px;
+  }
+}
+
+.photo-upload__picture {
+  /*@include wrapper;*/
+  padding-top: 20px;
+}
+
+.photo-upload__buttons::before {
+  @media (max-width: $mobiles-max) {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #dddfe0;
+  }
+}
+
+.photo-upload__container {
+  @media (max-width: $mobiles-max) {
+    @include wrapper;
+  }
+}
+
+.photo-upload__settings-container {
+  /*@include wrapper;*/
+}
+
+.photo-upload__settings {
+  @include list;
+  font-size: 0;
+  padding-top: 33px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 38px;
+  position: relative;
+
+  @media (min-width: $tablets) {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+}
+
+.photo-upload__setting {
+  display: inline-block;
+  margin: 0 16px;
+  vertical-align: middle;
+  padding-bottom: 25px;
+  position: relative;
+
+  &:last-child {
+    margin-left: 25px;
+  }
+
+  @media (min-width: $tablets) {
+    margin: 0 0 49px 0;
+    width: 24px;
+    height: 24px;
+
+    &:last-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.photo-editor__adjustments {
+  content: "";
+  position: absolute;
+  display: block;
+
+  &--hidden {
+    @media (max-width: $mobiles-max) {
+      display: none;
+    }
+  }
+
+  &--crop {
+    @media (min-width: $tablets) {
+      left: 65px;
+      top: 0;
+    }
+  }
+
+  &--color {
+    @media (min-width: $tablets) {
+      left: 65px;
+      top: 0;
+    }
+  }
+
+  &--contrast {
+    @media (min-width: $tablets) {
+      left: 65px;
+      top: 0;
+    }
+  }
+}
+
+.photo-editor__line {
+  content: "";
+  position: absolute;
+  background-color: black;
+  height: 2px;
+  width: 240px;
+  display: block;
+  left: -16px;
+  top: 25px;
+
+  @media (min-width: $tablets) {
+    top: 0;
+    left: 0;
+    width: 203px;
+  }
+}
+
+.photo-editor__button {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 14px;
+  height: 14px;
+  top: 20px;
+  bottom: 0;
+  border: 2px solid #d22856;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+  outline: none;
+  z-index: 1;
+
+  @media (min-width: $tablets) {
+    top: -5px;
+    left: 0;
+  }
+}
+
+
+.photo-editor__setting-icon {
+  fill: #b5b9be;
+
+  &:hover {
+    fill: #8d949b;
+    cursor: pointer;
+  }
+
+  &:active {
+    fill: #d22856;
+  }
+
+  &--crop {
+    @media (min-width: $tablets) {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &--color {
+    @media (min-width: $tablets) {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &--contrast {
+    @media (min-width: $tablets) {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+
+.photo-upload__buttons-wrapper {
+  /*@include wrapper;*/
+  padding-top: 35px;
+  padding-bottom: 25px;
+  margin-bottom: 40px;
+}
+
+.photo-upload__button {
+  background-color: #f2f2f2;
+  width: 100%;
+  display: block;
+  padding: 15px 30px 16px;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 30px;
+  margin-bottom: 15px;
+}
+
+.photo-upload__button--upload {
+  border: 3px solid #d22856;
+  color: #d22856;
+
+  &:hover {
+    background-color: #d22856;
+    color: white;
+  }
+
+  &:active {
+    color: #e06989;
+  }
+}
+
+.photo-upload__button--cancel {
+  border: 3px solid #dddfe0;
+  color: #dddfe0;
+
+  &:hover {
+    border-color: #b5b9be;
+    color: #b5b9be;
+  }
+
+  &:active {
+    background-color: #b5b9be;
+    border-color: #b5b9be;
+    color: #cbced2;
+  }
+}

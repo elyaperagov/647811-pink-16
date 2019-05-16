@@ -9,6 +9,11 @@
 
 .gallery__panorama {
   text-align: center;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablets) {
+    padding-bottom: 0;
+  }
 }
 
 .gallery__panorama--image {
@@ -47,7 +52,8 @@
   max-width: 100%;
 
   @media (min-width: $tablets) {
-    height: auto;
+    /*height: auto;*/
+    height: 510px;
     max-width: 100%;
   }
 

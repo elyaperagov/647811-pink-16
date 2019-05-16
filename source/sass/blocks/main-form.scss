@@ -17,7 +17,7 @@
 
 .form__container {
   @media (max-width: $mobiles-max) {
-    @include container-phones;
+    @include wrapper-phones;
   }
 }
 

@@ -38,7 +38,7 @@
   border: 0;
 }
 
-@mixin container-phones() {
+@mixin wrapper-phones() {
   width: 320px;
   padding-left: 20px;
   padding-right: 20px;
