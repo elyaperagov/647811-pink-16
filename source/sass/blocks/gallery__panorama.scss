@@ -1,6 +1,5 @@
 .gallery__panorama-wrapper {
   @include wrapper;
-  margin: 0 auto;
 
   @media (min-width: $tablets) {
     margin-bottom: 50px;
@@ -69,6 +68,7 @@
     position: absolute;
     top: 32px;
     right: 28px;
+    margin-top: 0;
   }
 }
 

@@ -1,7 +1,14 @@
-
+.upload {
+  @media (min-width: $desktops) {
+    @include wrapper;
+    margin-bottom: 35px;
+  }
+}
 
 .upload__container-title {
-  @include wrapper;
+  @media (max-width: $tablets-max) {
+    @include wrapper;
+  }
 }
 
 .upload__title {
@@ -16,6 +23,13 @@
   @media (min-width: $tablets) {
     font-size: 18px;
     line-height: 30px;
+    margin-top: 45px;
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: $desktops) {
+    margin-top: 10px;
+    margin-bottom: 65px;
   }
 }
 
@@ -24,19 +38,33 @@
 }
 
 .photo-upload__form {
-  @media (min-width: $tablets) {
+  @media (max-width: $tablets-max) {
     @include wrapper;
+  }
+
+  @media (min-width: $tablets) {
     background-color: #f2f2f2;
     display: flex;
+    padding-top: 35px;
+  }
+
+  @media (min-width: $desktops) {
+    padding-left: 80px;
+    padding-right: 60px;
   }
 }
 
 .photo-upload__flex {
   @media (min-width: $tablets) {
-    padding-top: 40px;
-    padding-bottom: 54px;
+    padding-top: 30px;
     margin-left: 45px;
     width: 260px;
+    flex-grow: 1;
+  }
+
+  @media (min-width: $desktops) {
+    padding-top: 20px;
+    margin-left: 90px;
   }
 }
 
@@ -55,11 +83,6 @@
   }
 }
 
-.photo-upload__container {
-  @media (max-width: $mobiles-max) {
-    @include wrapper;
-  }
-}
 
 .photo-upload__settings-container {
   /*@include wrapper;*/
@@ -93,13 +116,17 @@
   }
 
   @media (min-width: $tablets) {
-    margin: 0 0 49px 0;
+    margin: 0 0 45px 0;
     width: 24px;
     height: 24px;
 
     &:last-child {
       margin-left: 0;
     }
+  }
+
+  @media (min-width: $desktops) {
+    margin: 0 0 48px 0;
   }
 }
 
@@ -116,22 +143,38 @@
 
   &--crop {
     @media (min-width: $tablets) {
-      left: 65px;
-      top: 0;
+      left: 55px;
+      top: 10px;
+    }
+
+    @media (min-width: $desktops) {
+      left: 85px;
+      top: 20px;
     }
   }
 
+
   &--color {
     @media (min-width: $tablets) {
-      left: 65px;
-      top: 0;
+      left: 55px;
+      top: 10px;
+    }
+
+    @media (min-width: $desktops) {
+      left: 85px;
+      top: 20px;
     }
   }
 
   &--contrast {
     @media (min-width: $tablets) {
-      left: 65px;
-      top: 0;
+      left: 55px;
+      top: 10px;
+    }
+
+    @media (min-width: $desktops) {
+      left: 85px;
+      top: 20px;
     }
   }
 }
@@ -151,6 +194,10 @@
     left: 0;
     width: 203px;
   }
+
+  @media (min-width: $desktops) {
+    width: 290px;
+  }
 }
 
 .photo-editor__button {
@@ -167,6 +214,10 @@
   cursor: pointer;
   outline: none;
   z-index: 1;
+
+  &:active {
+    background-color: #d22856;
+  }
 
   @media (min-width: $tablets) {
     top: -5px;
@@ -192,6 +243,11 @@
       width: 24px;
       height: 24px;
     }
+
+    @media (min-width: $desktops) {
+      width: 48px;
+      height: 48px;
+    }
   }
 
   &--color {
@@ -199,12 +255,22 @@
       width: 24px;
       height: 24px;
     }
+
+    @media (min-width: $desktops) {
+      width: 48px;
+      height: 48px;
+    }
   }
 
   &--contrast {
     @media (min-width: $tablets) {
       width: 16px;
       height: 16px;
+    }
+
+    @media (min-width: $desktops) {
+      width: 32px;
+      height: 32px;
     }
   }
 }
@@ -214,6 +280,18 @@
   padding-top: 35px;
   padding-bottom: 25px;
   margin-bottom: 40px;
+
+  @media (min-width: $tablets) {
+    padding-top: 45px;
+    margin-bottom: 0;
+    padding-bottom: 30px;
+  }
+
+  @media (min-width: $desktops) {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 130px;
+  }
 }
 
 .photo-upload__button {
@@ -229,6 +307,14 @@
   cursor: pointer;
   border-radius: 30px;
   margin-bottom: 15px;
+
+  @media (min-width: $tablets) {
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $desktops) {
+    max-width: 185px;
+  }
 }
 
 .photo-upload__button--upload {
