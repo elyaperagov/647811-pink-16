@@ -134,8 +134,8 @@
               <blockquote class="reviews__text">
               </blockquote>
             </div>
-            <div class="reviews__pagination  pagination">
-              <span class="pagination__item  pagination__item‐‐active"></span>
+            <div class="reviews__pagination pagination">
+              <span class="pagination__item pagination__item‐‐active"></span>
               <span class="pagination__item"></span>
               <span class="pagination__item"></span>
             </div>
@@ -146,27 +146,46 @@
         <div class="rates__wrapper">
           <!--<h2 class="visually-hidden">Расценки</h2>-->
           <table class="rates__table">
-            <tr>
-              <th class="rates__table rates--option">Стандарт 3,99 USD</th>
+            <tr class="rates__table-all">
+              <th class="rates__item visually-hidden">Опции</th>
+              <th class="rates__item">
+                <div class="rates__title">База</div>
+                <div class="rates__price">1,99 USD</div>
+              </th>
+              <th class="rates__item rates__item--hit">
+                <div class="rates__title">Стандарт</div>
+                <div class="rates__price">3,99 USD</div>
+              </th>
+              <th class="rates__item">
+                <div class="rates__title">Анлим</div>
+                <div class="rates__price">9,99 USD</div>
+              </th>
             </tr>
             <tr>
               <td class="rates__detail">Розовый фильтр</td>
               <td class="rates__switcher">Вкл</td>
+              <td class="rates__switcher">Вкл</td>
+              <td class="rates__switcher">Вкл</td>
             </tr>
             <tr>
               <td class="rates__detail">Смайлики</td>
+              <td class="rates__switcher">Выкл</td>
+              <td class="rates__switcher">Вкл</td>
               <td class="rates__switcher">Вкл</td>
             </tr>
             <tr>
               <td class="rates__detail">Комментарии</td>
               <td class="rates__switcher">Выкл</td>
+              <td class="rates__switcher">Выкл</td>
+              <td class="rates__switcher">Вкл</td>
             </tr>
           </table>
+          <!--
           <div class="rates__pagination  pagination">
             <span class="pagination__item"></span>
             <span class="pagination__item pagination__item‐‐active"></span>
             <span class="pagination__item"></span>
-          </div>
+          </div>-->
         </div>
       </section>
       <section class="contacts">
