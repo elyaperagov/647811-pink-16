@@ -19,6 +19,8 @@
 }
 
 .contacts {
+  @include list;
+
   @media (min-width: $tablets) {
     display: flex;
     flex-direction: column;

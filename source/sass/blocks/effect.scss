@@ -1,0 +1,34 @@
+.effect {
+  background-color: $light-gray;
+}
+
+.effect__wrapper {
+  @include wrapper;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 55px;
+}
+
+.effect__picture {
+  position: relative;
+  width: 240px;
+
+  @media (min-width: $desktops) {
+    width: 298px;
+  }
+}
+
+.effect__text {
+  width: 50%;
+}
+
+.effect__picture::before {
+  content: "24";
+  position: absolute;
+  color: #d22856;
+  font-size: 96px;
+  font-weight: 700;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -150,7 +150,7 @@
 
 
 @media (max-width: $desktops) {
-  .main-nav--closed .site-list__item {
+  .main-nav--closed .main-nav__item {
     display: none;
   }
 }
@@ -174,7 +174,7 @@
   }
 }
 
-.site-list__item {
+.main-nav__item {
   cursor: pointer;
   border-bottom: solid 1px black;
   border-top: solid 1px $gray;
@@ -190,11 +190,11 @@
   }
 }
 
-.site-list__item a {
+.main-nav__item a {
   @include link;
 }
 
-.site-list__item:hover a {
+.main-nav__item:hover a {
   color: $pink;
 }
 

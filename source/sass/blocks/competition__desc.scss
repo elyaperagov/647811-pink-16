@@ -1,9 +1,9 @@
-.competition__desc {
+.main-competition__desc {
   @include wrapper;
   text-align: center;
 }
 
-.competition__desc--paragraph {
+.main-competition__paragraph {
   font-size: 14px;
   line-height: 30px;
   padding-top: 48px;
@@ -27,11 +27,16 @@
   }
 }
 
-.competition__desc--span {
+.main-competition__header {
+  @include wrapper;
+  text-align: center;
+}
+
+.main-competition__header--span {
   padding: 0;
 }
 
-.competition__desc--hidden {
+.main-competition__header--hidden {
   display: none;
 
   @media (min-width: $tablets) {

@@ -33,11 +33,24 @@
   }
 }
 
-.photo-upload {
+.upload__inner {
   background-color: #f2f2f2;
+  position: relative;
 }
 
-.photo-upload__form {
+.upload__inner::before {
+  @media (max-width: $mobiles-max) {
+    content: "";
+    position: absolute;
+    bottom: 200px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #dddfe0;
+  }
+}
+
+.upload__form {
   @media (max-width: $tablets-max) {
     @include wrapper;
   }
@@ -54,7 +67,7 @@
   }
 }
 
-.photo-upload__flex {
+.upload__flex {
   @media (min-width: $tablets) {
     padding-top: 30px;
     margin-left: 45px;
@@ -68,27 +81,12 @@
   }
 }
 
-.photo-upload__picture {
-  /*@include wrapper;*/
+.upload__picture {
   padding-top: 20px;
 }
 
-.photo-upload__buttons::before {
-  @media (max-width: $mobiles-max) {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: #dddfe0;
-  }
-}
 
-
-.photo-upload__settings-container {
-  /*@include wrapper;*/
-}
-
-.photo-upload__settings {
+.upload__settings {
   @include list;
   font-size: 0;
   padding-top: 33px;
@@ -104,7 +102,7 @@
   }
 }
 
-.photo-upload__setting {
+.upload__setting {
   display: inline-block;
   margin: 0 16px;
   vertical-align: middle;
@@ -130,7 +128,7 @@
   }
 }
 
-.photo-editor__adjustments {
+.upload__adjustments {
   content: "";
   position: absolute;
   display: block;
@@ -179,7 +177,7 @@
   }
 }
 
-.photo-editor__line {
+.upload__line {
   content: "";
   position: absolute;
   background-color: black;
@@ -200,7 +198,7 @@
   }
 }
 
-.photo-editor__button {
+.upload__range {
   content: "";
   position: absolute;
   display: block;
@@ -226,7 +224,7 @@
 }
 
 
-.photo-editor__setting-icon {
+.upload__setting-icon {
   fill: #b5b9be;
 
   &:hover {
@@ -275,7 +273,7 @@
   }
 }
 
-.photo-upload__buttons-wrapper {
+.upload__buttons-wrapper {
   /*@include wrapper;*/
   padding-top: 35px;
   padding-bottom: 25px;
@@ -294,7 +292,7 @@
   }
 }
 
-.photo-upload__button {
+.upload__button {
   background-color: #f2f2f2;
   width: 100%;
   display: block;
@@ -317,7 +315,7 @@
   }
 }
 
-.photo-upload__button--upload {
+.upload__button--upload {
   border: 3px solid #d22856;
   color: #d22856;
 
@@ -331,7 +329,7 @@
   }
 }
 
-.photo-upload__button--cancel {
+.upload__button--cancel {
   border: 3px solid #dddfe0;
   color: #dddfe0;
 

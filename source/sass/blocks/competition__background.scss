@@ -2,24 +2,20 @@
   @include wrapper;
   position: relative;
   text-align: center;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  min-height: 170px;
 
+  @media (min-width: $tablets) {
+    padding-top: 69px;
+    padding-bottom: 69px;
+    min-height: 330px;
+  }
 
-  &--common {
-    padding-top: 28px;
-    padding-bottom: 28px;
-    min-height: 170px;
-
-    @media (min-width: $tablets) {
-      padding-top: 69px;
-      padding-bottom: 69px;
-      min-height: 330px;
-    }
-
-    @media (min-width: $desktops) {
-      min-height: 284px;
-      padding-top: 64px;
-      padding-bottom: 64px;
-    }
+  @media (min-width: $desktops) {
+    min-height: 284px;
+    padding-top: 64px;
+    padding-bottom: 64px;
   }
 
   &--mod {

@@ -1,4 +1,23 @@
 /* stylelint-disable */
+.achievements {
+  @include list;
+}
+
+.form__fieldset--achievements {
+  background-color: #f2f2f2;
+}
+
+.form__fieldset {
+  display: flex;
+  justify-content: center;
+}
+
+.form__list {
+  max-width: 280px;
+}
+
+
+/*-------------------------*/
 .form__achievements {
   order: 4;
   background-color: #f2f2f2;

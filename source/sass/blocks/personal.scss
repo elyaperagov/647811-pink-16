@@ -1,4 +1,12 @@
 /* stylelint-disable */
+.form__list {
+  @include list;
+  margin: 0 auto;
+}
+
+
+
+/*-----------------------*/
 .form__personal {
   order: 1;
 
@@ -10,6 +18,7 @@
 .personal {
   padding-bottom: 25px;
   padding-top: 20px;
+  @include list;
 
   @media (min-width: $tablets) {
   /*  margin-bottom: 0;*/

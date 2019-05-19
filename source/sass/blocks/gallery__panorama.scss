@@ -1,25 +1,21 @@
-.gallery__panorama-wrapper {
+.panorama__inner {
   @include wrapper;
-
-  @media (min-width: $tablets) {
-    margin-bottom: 50px;
-  }
 }
 
-.gallery__panorama {
+.panorama {
   text-align: center;
   padding-bottom: 20px;
 
   @media (min-width: $tablets) {
-    padding-bottom: 0;
+    padding-bottom: 50px;
   }
 }
 
-.gallery__panorama--image {
+.panorama__image {
   position: relative;
 }
 
-.gallery__panorama--button {
+.panorama__button {
   position: absolute;
   font-size: 12px;
   line-height: 24px;
@@ -44,7 +40,7 @@
 }
 
 
-.gallery__panorama img {
+.panorama img {
   margin: 0 auto;
   display: block;
   height: 140px;
@@ -62,7 +58,7 @@
   }
 }
 
-.gallery-like__button--panorama {
+.post__like-button--panorama {
   @media (min-width: $tablets) {
     content: "";
     position: absolute;
@@ -72,7 +68,7 @@
   }
 }
 
-.gallery-like__like--panorama {
+.post__like-like--panorama {
   @media (min-width: $tablets) {
     content: "";
     position: absolute;

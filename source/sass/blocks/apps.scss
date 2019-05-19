@@ -1,3 +1,11 @@
+.apps {
+  @include list;
+
+  @media (min-width: $desktops) {
+    margin-left: 13px;
+  }
+}
+
 .form__radio {
   background-color: #f2f2f2;
   order: 2;
@@ -44,12 +52,6 @@
 
 input[type="radio"] {
   @include visually-hidden;
-}
-
-.apps {
-  @media (min-width: $desktops) {
-    margin-left: 13px;
-  }
 }
 
 .apps__item {
