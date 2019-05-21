@@ -1,0 +1,28 @@
+.feedback {
+  @include wrapper;
+}
+
+.feedback__list {
+  @include list;
+  text-align: center;
+}
+
+.feedback__header {
+  font-size: 24px;
+  text-align: center;
+  line-height: 30px;
+  font-weight: 300;
+  padding-top: 120px;
+}
+
+.feedback__title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.feedback__text {
+  color: #d22856;
+  font-size: 24px;
+  font-weight: 300;
+  text-decoration: none;
+}
