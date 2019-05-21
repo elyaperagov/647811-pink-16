@@ -1,28 +1,24 @@
-/* stylelint-disable */
+/*
 .form__list {
   @include list;
   margin: 0 auto;
 }
+*/
 
-
-
-/*-----------------------*/
-.form__personal {
+.personal {
   order: 1;
+  padding-bottom: 23px;
+  padding-top: 20px;
 
   @media (min-width: $desktops) {
     width: 435px;
+    padding-bottom: 0;
+    padding-top: 0;
   }
 }
 
-.personal {
-  padding-bottom: 25px;
-  padding-top: 20px;
+.personal__list {
   @include list;
-
-  @media (min-width: $tablets) {
-  /*  margin-bottom: 0;*/
-  }
 
   @media (min-width: $desktops) {
     width: 435px;
@@ -70,12 +66,12 @@
   padding: 14px 20px 15px;
   outline: none;
 
-    &:hover {
+  &:hover {
     border: 2px solid #283645;
   }
 
-    &:active,
-    &:focus {
-      border: 2px solid #d22856;
+  &:active,
+  &:focus {
+    border: 2px solid #d22856;
   }
 }

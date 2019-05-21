@@ -1,6 +1,5 @@
 .form__fieldset {
   border: none;
-  margin: 0 -20px;
   padding: 0;
 
   @media (min-width: $tablets) {
@@ -14,7 +13,6 @@
   text-transform: uppercase;
   line-height: 17px;
   text-align: center;
-  width: 280px;
 }
 
 .form__legend--hidden {
@@ -26,7 +24,9 @@
 }
 
 .form__inner {
-  @include wrapper;
+  @media (max-width: $mobiles-max) {
+    @include wrapper;
+  }
 }
 
 .form__label {
@@ -63,7 +63,7 @@
     border: 2px solid #d22856;
   }
 }
-
+/*
 .form__fieldset--personal {
   order: 1;
 
@@ -143,15 +143,11 @@ input[type="checkbox"] {
   margin-bottom: 60px;
 
   @media (min-width: $tablets) {
-    @include wrapper;
-  }
-}
-
-.form__flex {
-  @media (min-width: $tablets) {
     display: flex;
     flex-direction: column;
     margin-bottom: 48px;
+
+    @include wrapper;
   }
 
   @media (min-width: $desktops) {

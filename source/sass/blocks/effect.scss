@@ -1,12 +1,23 @@
 .effect {
-  background-color: $light-gray;
+  @media (max-width: $mobiles-max) {
+    @include visually-hidden;
+  }
+
+  @media (min-width: $desktops) {
+    background-color: $light-gray;
+  }
 }
 
 .effect__wrapper {
   @include wrapper;
   display: flex;
   justify-content: space-between;
-  padding-top: 55px;
+  padding-top: 57px;
+
+  @media (min-width: $desktops) {
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
 }
 
 .effect__picture {
@@ -18,8 +29,47 @@
   }
 }
 
-.effect__text {
+.effect__desc {
   width: 50%;
+
+  @media (min-width: $desktops) {
+    width: 574px;
+  }
+}
+
+.effect__text {
+  line-height: 24px;
+  margin: 0;
+  padding: 10px 0;
+
+  @media (min-width: $desktops) {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 20px 0;
+  }
+}
+
+.effect__title {
+  font-size: 30px;
+  line-height: 36px;
+  max-width: 175px;
+  margin-top: 35px;
+  margin-bottom: 0;
+
+  @media (min-width: $desktops) {
+    max-width: inherit;
+    margin-top: 90px;
+  }
+}
+
+.effect__link {
+  margin: 0;
+
+  @media (min-width: $desktops) {
+    font-size: 18px;
+    line-height: 30px;
+    padding-top: 13px;
+  }
 }
 
 .effect__picture::before {
@@ -31,4 +81,9 @@
   top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  @media (min-width: $desktops) {
+    top: 54%;
+    font-size: 120px;
+  }
 }

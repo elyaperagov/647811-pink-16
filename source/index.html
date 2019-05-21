@@ -122,81 +122,124 @@
               <path fill="#d22856" d="M149,69.048c-69.864,0-126.5,56.636-126.5,126.5c0,69.864,56.636,126.5,126.5,126.5 s126.5-56.636,126.5-126.5C275.5,125.685,218.864,69.048,149,69.048z M149,306.264c-60.844,0-110.167-49.323-110.167-110.167 C38.833,135.253,88.156,85.93,149,85.93c60.843,0,110.167,49.323,110.167,110.167C259.167,256.941,209.843,306.264,149,306.264z"></path>
             </svg>
           </div>
-          <div class="effect__text">
-            <h2>Эффект на 24 часа!</h2>
-            <p>Британские ученые провели исследования и доказали,
-            что положительный эффект от использования приложения длится целые сутки!
+          <div class="effect__desc">
+            <h2 class="effect__title">Эффект&nbsp; на 24 часа!</h2>
+            <p class="effect__text">Британские ученые провели исследования и&nbsp;доказали, что&nbsp;положительный эффект от&nbsp;использования приложения
+                длится целые сутки!
             </p>
-            <p><a href="#">Узнать больше об исследовании</a></p>
+            <p class="effect__link"><a href="#">Узнать больше об исследовании</a></p>
           </div>
         </div>
       </section>
       <section class="reviews">
-        <!--<h2 class="visually-hidden">Отзывы</h2>-->
-        <div class="reviews__wrapper">
-          <div class="reviews__list">
-            <div class="reviews__customer">
-              <p class="reviews__customer-name">Николай Петров</p>
-              <blockquote class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
-              А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+          <h2 class="reviews__title visually-hidden">Отзывы пользователей</h2>
+          <div class="reviews__wrapper">
+            <div class="reviews__list">
+              <blockquote class="reviews__item">
+                <div class="reviews__customer">
+                  <h3 class="reviews__customer-name">Николай Петров</h3>
+                  <div class="reviews__customer-about">25 лет, водитель трамвая</div>
+                </div>
+                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+                  А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
               </blockquote>
-            </div>
-            <div class="reviews__customer">
-              <p class="reviews__customer-name"></p>
-              <blockquote class="reviews__text">
+              <blockquote class="reviews__item">
+                <div class="reviews__customer">
+                  <h3 class="reviews__customer-name">Николай Петров</h3>
+                  <div class="reviews__customer-about">25 лет, водитель трамвая</div>
+                </div>
+                <p class="reviews__text">«то приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+                  А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
               </blockquote>
-            </div>
-            <div class="reviews__customer">
-              <p class="reviews__customer-name"></p>
-              <blockquote class="reviews__text">
+              <blockquote class="reviews__item">
+                <div class="reviews__customer">
+                  <h3 class="reviews__customer-name">Николай Петров</h3>
+                  <div class="reviews__customer-about">25 лет, водитель трамвая</div>
+                </div>
+                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+                  А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
               </blockquote>
+              <button class="reviews__nav reviews__nav--previous" type="button">Предыдущий</button>
+              <button class="reviews__nav reviews__nav--next" type="button">Следующий</button>
             </div>
-            <div class="reviews__pagination pagination">
+            <div class="pagination">
               <span class="pagination__item pagination__item‐‐active"></span>
               <span class="pagination__item"></span>
               <span class="pagination__item"></span>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
       <section class="rates">
         <div class="rates__wrapper">
           <!--<h2 class="visually-hidden">Расценки</h2>-->
           <table class="rates__table">
             <tr class="rates__table-all">
-              <th class="rates__item visually-hidden">Опции</th>
-              <th class="rates__item">
+              <th class="rates__header rates__item--options">Опции</th>
+              <th class="rates__header">
                 <div class="rates__title">База</div>
                 <div class="rates__price">1,99 USD</div>
               </th>
-              <th class="rates__item rates__item--hit">
+              <th class="rates__header rates__item--hit">
                 <div class="rates__title">Стандарт</div>
                 <div class="rates__price">3,99 USD</div>
               </th>
-              <th class="rates__item">
+              <th class="rates__header">
                 <div class="rates__title">Анлим</div>
                 <div class="rates__price">9,99 USD</div>
               </th>
             </tr>
             <tr>
-              <td class="rates__detail">Розовый фильтр</td>
-              <td class="rates__switcher">Вкл</td>
-              <td class="rates__switcher">Вкл</td>
-              <td class="rates__switcher">Вкл</td>
-            </tr>
-            <tr>
-              <td class="rates__detail">Смайлики</td>
-              <td class="rates__switcher">Выкл</td>
-              <td class="rates__switcher">Вкл</td>
-              <td class="rates__switcher">Вкл</td>
-            </tr>
-            <tr>
-              <td class="rates__detail">Комментарии</td>
-              <td class="rates__switcher">Выкл</td>
-              <td class="rates__switcher">Выкл</td>
-              <td class="rates__switcher">Вкл</td>
-            </tr>
-          </table>
+                <td class="rates__item  rates__item--settings-title">
+                  <span class="rates__settings">Розовый фильтр</span>
+                </td>
+                <td class="rates__item">
+                  <span class="rates__settings  rates__settings--name">Розовый фильтр</span>
+                  <span class="rates__settings-status  rates__settings-status--on">Включено</span>
+                </td>
+                <td class="rates__item">
+                  <span class="rates__settings  rates__settings--name">Розовый фильтр</span>
+                  <span class="rates__settings-status  rates__settings-status--on">Включено</span>
+                </td>
+                <td class="rates__item">
+                  <span class="rates__settings  rates__settings--name">Розовый фильтр</span>
+                  <span class="rates__settings-status  rates__settings-status--on">Включено</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="rates__item  rates__item--settings-title">
+                  <span class="rates__settings">Смайлики</span>
+                </td>
+                <td class="rates__item">
+                  <span class="rates__settings  rates__settings--name">Смайлики</span>
+                  <span class="rates__settings-status  rates__settings-status--off">Не включено</span>
+                </td>
+                <td class="rates__item">
+                  <span class="rates__settings  rates__settings--name">Смайлики</span>
+                  <span class="rates__settings-status  rates__settings-status--on">Включено</span>
+                </td>
+                <td class="rates__item">
+                  <span class="rates__settings  rates__settings--name">Смайлики</span>
+                  <span class="rates__settings-status  rates__settings-status--on">Включено</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="rates__item  rates__item--settings-title">
+                  <span class="rates__settings">Комментарии</span>
+                </td>
+                <td class="rates__item">
+                  <span class="rates__settings  rates__settings--name">Комментарии</span>
+                  <span class="rates__settings-status  rates__settings-status--off">Не включено</span>
+                </td>
+                <td class="rates__item">
+                  <span class="rates__settings  rates__settings--name">Комментарии</span>
+                  <span class="rates__settings-status  rates__settings-status--off">Не включено</span>
+                </td>
+                <td class="rates__item">
+                  <span class="rates__settings  rates__settings--name">Комментарии</span>
+                  <span class="rates__settings-status  rates__settings-status--on">Включено</span>
+                </td>
+              </tr>
+            </table>
           <!--
           <div class="rates__pagination  pagination">
             <span class="pagination__item"></span>

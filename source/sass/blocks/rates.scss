@@ -7,40 +7,163 @@
 }
 
 .rates__table {
+  position: relative;
   left: 50%;
   transform: translateX(-50%);
-  width: 940px;
+  width: 260%;
+  margin-top: 117px;
+
+  @media (min-width: $tablets) {
+    width: 100%;
+    margin-top: 95px;
+  }
 }
 
-.rates__item {
+.rates__header {
   background-color: #283645;
   color: white;
   position: relative;
   overflow: hidden;
+  text-transform: uppercase;
+  padding: 17px 20px 20px;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+
+  @media (min-width: $tablets) {
+    width: 25%;
+    padding: 10px 0;
+  }
+
+  @media (min-width: $desktops) {
+    padding: 18px 22px;
+  }
 }
 
 .rates__title {
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 30px;
   font-weight: 700;
+
+  @media (min-width: $tablets) {
+    font-size: 16px;
+  }
+
+  @media (min-width: $desktops) {
+    font-size: 18px;
+  }
 }
 
 .rates__price {
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 24px;
   line-height: 30px;
   font-weight: 300;
+
+  @media (min-width: $tablets) {
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktops) {
+    font-size: 24px;
+  }
 }
 
+.rates__item {
+  position: relative;
+  background-color: white;
+  border: #e5e5e5;
+  padding: 17px 68px 17px 22px;
+
+  @media (min-width: $tablets) {
+    padding: 7px 16px;
+  }
+
+  @media (min-width: $desktops) {
+    padding: 16px 22px 13px;
+  }
+}
+
+.rates__item--options {
+  @media (max-width: $mobiles-max) {
+    display: none;
+  }
+
+  @media (min-width: $tablets) {
+    background-color: $light-gray;
+    font-size: 0;
+  }
+}
+
+.rates__item--hit {
+  width: 38%;
+
+  @media (min-width: $tablets) {
+    width: 25%;
+  }
+}
 
 .rates__item--hit::before {
   content: "ХИТ";
   position: absolute;
   background-color: #d22856;
-  width: 90px;
+  width: 110px;
   height: 30px;
   left: -30px;
-  top: 0;
+  top: 12px;
   transform: rotate(-45deg);
+
+
+  @media (min-width: $tablets) {
+    left: -35px;
+    top: 5px;
+  }
+}
+
+.rates__item--settings-title {
+  @media (max-width: $mobiles-max) {
+    display: none;
+  }
+}
+
+.rates__settings {
+  @media (min-width: $desktops) {
+    font-size: 18px;
+  }
+
+  &--name {
+    text-transform: uppercase;
+
+    @media (min-width: $tablets) {
+      @include visually-hidden;
+    }
+  }
+}
+
+.rates__settings-status {
+  position: absolute;
+  display: block;
+  width: 31px;
+  height: 30px;
+  top: 13px;
+  right: 17px;
+  overflow: hidden;
+  font-size: 0;
+
+  @media (min-width: $tablets) {
+    position: relative;
+    top: auto;
+    right: auto;
+    margin: 0 auto;
+  }
+
+  &--on {
+    background: url("../img/icon-yes.svg") no-repeat center;
+    background-size: 30px 20px;
+  }
+
+  &--off {
+    background: url("../img/icon-no.svg") no-repeat center;
+    background-size: 27px 26px;
+  }
 }

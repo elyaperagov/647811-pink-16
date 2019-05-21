@@ -1,4 +1,4 @@
-.apps {
+.apps__list {
   @include list;
 
   @media (min-width: $desktops) {
@@ -6,7 +6,7 @@
   }
 }
 
-.form__radio {
+.apps {
   background-color: #f2f2f2;
   order: 2;
 
@@ -17,36 +17,36 @@
   @media (min-width: $desktops) {
     width: 435px;
   }
+}
 
-  &--fieldset {
-    padding: 0;
+.form__fieldset--apps {
+  padding: 0;
 
-    @media (min-width: $tablets) {
-      padding-top: 49px;
-      padding-left: 57px;
-      padding-bottom: 25px;
-    }
-
-    @media (min-width: $desktops) {
-      width: 435px;
-      padding-bottom: 10px;
-    }
+  @media (min-width: $tablets) {
+    padding-top: 49px;
+    padding-left: 57px;
+    padding-bottom: 25px;
   }
 
-  &--legend {
-    padding: 38px 20px 28px;
+  @media (min-width: $desktops) {
+    width: 435px;
+    padding-bottom: 10px;
+  }
+}
 
-    @media (min-width: $tablets) {
-      margin: -15px 0;
-      background-color: white;
-      padding: 0 24px;
-      margin-left: 65px;
-    }
+.form__legend--apps {
+  padding: 38px 20px 28px;
 
-    @media (min-width: $desktops) {
-      transform: translateX(-5px);
-      margin-left: 0;
-    }
+  @media (min-width: $tablets) {
+    margin: -15px 0;
+    background-color: white;
+    padding: 0 24px;
+    margin-left: 65px;
+  }
+
+  @media (min-width: $desktops) {
+    transform: translateX(-5px);
+    margin-left: 0;
   }
 }
 

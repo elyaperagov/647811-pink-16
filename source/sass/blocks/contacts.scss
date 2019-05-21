@@ -2,7 +2,7 @@
   @include wrapper;
 }*/
 
-.form__contacts {
+.contacts {
   order: 3;
   padding: 0;
   margin-top: 30px;
@@ -18,7 +18,7 @@
   }
 }
 
-.contacts {
+.contacts__list {
   @include list;
 
   @media (min-width: $tablets) {
