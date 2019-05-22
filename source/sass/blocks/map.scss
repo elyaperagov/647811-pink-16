@@ -81,3 +81,14 @@
     }
   }
 }
+
+/*
+.page-footer__map {
+  display: none;
+}*/
+
+.page-footer__map--mobile {
+  @media (max-width: $mobiles-max) {
+    display: block;
+  }
+}
