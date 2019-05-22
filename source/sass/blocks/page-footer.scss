@@ -123,3 +123,9 @@
     fill: #bec2c7;
   }
 }
+
+.page-footer--hidden {
+  @media (max-width: $mobiles-max) {
+    display: none;
+  }
+}

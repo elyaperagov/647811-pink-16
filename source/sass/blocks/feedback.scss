@@ -1,10 +1,23 @@
 .feedback {
   @include wrapper;
+  padding-top: 22px;
+  padding-bottom: 18px;
+
+  @media (min-width: $tablets) {
+    padding-bottom: 7px;
+  }
 }
 
 .feedback__list {
   @include list;
   text-align: center;
+
+  @media (min-width: $tablets) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .feedback__header {
@@ -12,12 +25,26 @@
   text-align: center;
   line-height: 30px;
   font-weight: 300;
-  padding-top: 120px;
+  margin-bottom: 33px;
+
+  @media (min-width: $tablets) {
+    font-size: 40px;
+    line-height: 48px;
+    margin: 0;
+    padding-top: 22px;
+    padding-bottom: 45px;
+  }
 }
 
 .feedback__title {
   font-size: 18px;
   font-weight: 700;
+  margin: 0;
+  line-height: 24px;
+
+  @media (min-width: $tablets) {
+    margin-bottom: 5px;
+  }
 }
 
 .feedback__text {
@@ -25,4 +52,19 @@
   font-size: 24px;
   font-weight: 300;
   text-decoration: none;
+  line-height: 30px;
+  font-style: inherit;
+}
+
+.feedback__item {
+  padding-bottom: 22px;
+
+  @media (min-width: $tablets) {
+    width: 300px;
+
+    &:last-child {
+      flex-grow: 1;
+      padding-top: 22px;
+    }
+  }
 }
