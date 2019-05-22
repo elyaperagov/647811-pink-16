@@ -100,6 +100,12 @@
     text-align: left;
   }
 
+  @media (max-width: $tablets-max) {
+    br {
+      display: none;
+    }
+  }
+
   @media (min-width: $desktops) {
     font-size: 30px;
     line-height: 30px;

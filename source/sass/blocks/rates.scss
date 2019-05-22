@@ -176,6 +176,10 @@
   @media (min-width: $tablets) {
     padding-bottom: 7px;
   }
+
+  @media (min-width: $desktops) {
+    padding-bottom: 30px;
+  }
 }
 
 .rates__pagination-item {
