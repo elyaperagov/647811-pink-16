@@ -2,9 +2,11 @@
   @include wrapper;
   padding-top: 28px;
   position: relative;
+  padding-bottom: 20px;
 
   @media (min-width: $tablets) {
     padding-top: 87px;
+    padding-bottom: 10px;
   }
 
   @media (min-width: $desktops) {
