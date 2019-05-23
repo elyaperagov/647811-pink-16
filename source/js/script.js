@@ -17,3 +17,15 @@ if (navMain.classList.contains('main-nav--closed')) {
   header.classList.remove('page-header--relative');
 }
 });
+
+var mapFooter = document.querySelector('.page-footer__map');
+var mapIframe = document.querySelector('.page-footer__iframe');
+
+if (mapFooter.classList.contains('page-footer__map--no-js')) {
+  mapIframe.classList.remove('page-footer__iframe--with-js');
+  mapIframe.classList.add('page-footer__iframe--no-js');
+} else {
+  mapIframe.classList.add('page-footer__iframe--with-js');
+  mapIframe.classList.remove('page-footer__iframe--no-js');
+}
+});

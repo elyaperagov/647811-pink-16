@@ -133,10 +133,12 @@
   position: absolute;
   display: block;
 
-  &--hidden {
-    @media (max-width: $mobiles-max) {
-      display: none;
-    }
+  @media (max-width: $mobiles-max) {
+    display: none;
+  }
+
+  &--active {
+    display: block;
   }
 
   &--crop {
@@ -150,7 +152,6 @@
       top: 20px;
     }
   }
-
 
   &--color {
     @media (min-width: $tablets) {
@@ -233,6 +234,10 @@
   }
 
   &:active {
+    fill: #d22856;
+  }
+
+  &--active {
     fill: #d22856;
   }
 
