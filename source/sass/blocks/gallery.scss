@@ -102,11 +102,11 @@
 
 
 .gallery__item {
-  max-width: 280px;
+  width: 280px;
   padding-bottom: 20px;
 
   @media (min-width: $tablets) {
-    max-width: 300px;
+    width: 300px;
     margin-right: 20px;
 
     &:nth-child(even) {

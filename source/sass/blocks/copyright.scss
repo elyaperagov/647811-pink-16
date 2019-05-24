@@ -1,0 +1,35 @@
+.copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  @media (min-width: $tablets) {
+    margin-top: 13px;
+  }
+
+  @media (min-width: $desktops) {
+    margin-top: 30px;
+  }
+}
+
+.copyright__title {
+  margin-right: 15px;
+  margin-top: 4px;
+
+  @media (min-width: $desktops) {
+    font-size: 18px;
+  }
+}
+
+
+.copyright__link {
+  fill: #d22856;
+
+  &:hover {
+    fill: #283645;
+  }
+
+  &:active {
+    fill: #bec2c7;
+  }
+}
