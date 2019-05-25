@@ -1,7 +1,8 @@
-/* stylelint-disable */
-.page-header__logo  {
+.page-header__logo {
   text-align: left;
   height: 66px;
+  display: block;
+  cursor: pointer;
 
   @media (min-width: $tablets) {
     height: 110px;
@@ -13,7 +14,6 @@
     margin: 0;
     text-align: center;
     height: 110px;
-    /*width: 300px;неточно*/
   }
 }
 
@@ -33,12 +33,6 @@
     height: auto;
     margin: 26px 0;
   }
-}
-
-/*лого хэдер*/
-.page-header__logo {
-  display: block;
-  cursor: pointer;
 }
 
 .page-header__letters,
@@ -116,7 +110,7 @@
 }
 
 .page-footer__glasses {
-  fill: #D22856;
+  fill: #d22856;
 }
 
 .page-footer__glasses--dots {
