@@ -9,14 +9,14 @@
     align-items: center;
     min-height: 127px;
 
+    &--form {
+      margin-top: 50px;
+    }
 
     @media (min-width: $desktops) {
       min-height: 175px;
+      margin-top: 0;
     }
-
-    /*.page-footer__logo {
-      margin-right: 70px;
-    }*/
   }
 }
 

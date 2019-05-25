@@ -132,7 +132,7 @@
 .main-nav__item {
   cursor: pointer;
   border-bottom: solid 1px black;
-  border-top: solid 1px $gray;
+  border-top: solid 1px #485461;
   padding: 15px 95px;
 
   @media (min-width: $desktops) {
@@ -166,5 +166,5 @@
 }
 
 .main-nav__item:hover a {
-  color: $pink;
+  color: #d22856;
 }
