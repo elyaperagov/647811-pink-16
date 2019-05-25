@@ -12,12 +12,27 @@
   min-height: 236px;
   padding-top: 66px;
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 290px auto;
+    }
+
   @media (min-width: $tablets) {
     background-image: url("../img/bg-back-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 1180px auto;
+    }
   }
 
   @media (min-width: $desktops) {
     background-image: url("../img/bg-back-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: cover;
+    }
   }
 }
 
