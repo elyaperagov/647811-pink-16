@@ -1,5 +1,6 @@
 .advantages__background {
-  background-color: $light-gray;
+  background-color: #f2f2f2;
+  position: relative;
 }
 
 .advantages__overview {
@@ -9,21 +10,20 @@
   font-weight: lighter;
   line-height: 30px;
   text-align: center;
-  padding: 0 85px 0;
-  margin-bottom: 112px;
+  padding: 0 85px 28px;
 
   @media (min-width: $tablets) {
     @include wrapper;
     font-size: 40px;
     line-height: 48px;
-    padding: 0;
+    padding-bottom: 48px;
     margin: 0 auto;
   }
 
   @media (min-width: $desktops) {
     font-size: 50px;
     line-height: 60px;
-    margin: 0 auto 31px;
+    margin: 0 auto 24px;
   }
 }
 
@@ -55,7 +55,27 @@
 .advantages__wrapper {
   @include wrapper;
   position: relative;
-  margin-top: 37px;
+  margin-top: 0;
+  padding-top: 54px;
+
+  @media (min-width: $desktops) {
+    padding-top: 0;
+  }
+}
+
+.advantages__background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/bg-triangle-white.svg") no-repeat center top;
+  background-size: contain;
+  z-index: 0;
+
+  @media (min-width: $tablets) {
+    top: 0;
+  }
 }
 
 .advantages__list {
@@ -66,14 +86,14 @@
     display: flex;
     flex-direction: column;
     padding-left: 50%;
-    padding-top: 69px;
+    padding-top: 3px;
   }
 
   @media (min-width: $desktops) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 22px 0 0 0;
+    padding: 0;
   }
 }
 
@@ -85,6 +105,7 @@
   }
 
   @media (min-width: $desktops) {
+    margin-top: 0;
     padding: 0 20px;
     width: 300px;
   }
@@ -98,6 +119,12 @@
 
   @media (min-width: $tablets) {
     text-align: left;
+  }
+
+  @media (max-width: $tablets-max) {
+    br {
+      display: none;
+    }
   }
 
   @media (min-width: $desktops) {
@@ -124,6 +151,18 @@
     max-width: 300px;
     padding: 0 9px 0 5px;
     margin: 25px 0 18px;
+  }
+}
+
+.advantages__about br {
+  display: none;
+
+  @media (min-width: $tablets) {
+    display: inline;
+  }
+
+  @media (min-width: $desktops) {
+    display: none;
   }
 }
 
@@ -160,7 +199,7 @@
     content: "";
     position: absolute;
     left: 0;
-    top: 17px;
+    top: -50px;
     width: 268px;
     height: 547px;
     margin-left: auto;
@@ -231,15 +270,3 @@
     }
   }
 }
-
-/*
-.advantages__overview::after {
-  content: "";
-  position: absolute;
-  background-image: url("../img/bg-triangle-white.svg");
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-}*/

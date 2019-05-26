@@ -17,3 +17,9 @@ if (navMain.classList.contains('main-nav--closed')) {
   header.classList.remove('page-header--relative');
 }
 });
+
+var mapFooter = document.querySelector('.page-footer__map');
+var mapIframe = document.querySelector('.page-footer__iframe');
+
+mapIframe.classList.add('page-footer__iframe--with-js');
+mapIframe.classList.add('page-footer__map--with-js');

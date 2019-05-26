@@ -1,0 +1,70 @@
+.personal {
+  order: 1;
+  padding-bottom: 23px;
+  padding-top: 20px;
+
+  @media (min-width: $desktops) {
+    width: 435px;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+}
+
+.personal__list {
+  @include list;
+
+  @media (min-width: $desktops) {
+    width: 435px;
+    padding-bottom: 0;
+    padding-top: 10px;
+  }
+}
+
+
+.personal__label {
+  font-size: 14px;
+  line-height: 30px;
+  padding-left: 23px;
+  text-transform: uppercase;
+  color: #d22856;
+
+  @media (min-width: $tablets) {
+    margin-left: 0;
+    margin-right: 22px;
+    margin-top: 22px;
+    padding-left: 0;
+  }
+}
+
+.personal__item {
+  padding-bottom: 17px;
+
+  @media (min-width: $tablets) {
+    display: flex;
+    padding-bottom: 47px;
+
+    &:last-child {
+      padding-bottom: 35px;
+    }
+  }
+}
+
+.personal__input {
+  margin-top: 5px;
+  width: 100%;
+  border: 2px solid #e5e5e5;
+  border-radius: 3px;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 14px 20px 15px;
+  outline: none;
+
+  &:hover {
+    border: 2px solid #283645;
+  }
+
+  &:active,
+  &:focus {
+    border: 2px solid #d22856;
+  }
+}

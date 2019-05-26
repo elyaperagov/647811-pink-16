@@ -1,0 +1,79 @@
+.panorama__inner {
+  @include wrapper;
+}
+
+.panorama {
+  text-align: center;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablets) {
+    padding-bottom: 50px;
+  }
+}
+
+.panorama__image {
+  position: relative;
+}
+
+.panorama__button {
+  position: absolute;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 6px 20px;
+  top: 0;
+  left: 50%;
+  display: block;
+  background-color: #d22856;
+  color: white;
+  cursor: pointer;
+
+  @media (min-width: $tablets) {
+    transform: translateX(170px);
+    top: 55px;
+    left: 51%;
+  }
+
+  @media (min-width: $desktops) {
+    transform: translateX(330px);
+  }
+}
+
+
+.panorama img {
+  margin: 0 auto;
+  display: block;
+  height: 140px;
+  max-width: 100%;
+
+  @media (min-width: $tablets) {
+    /*height: auto;*/
+    height: 510px;
+    max-width: 100%;
+  }
+
+  @media (min-width: $desktops) {
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+.post__like-button--panorama {
+  @media (min-width: $tablets) {
+    content: "";
+    position: absolute;
+    top: 32px;
+    right: 28px;
+    margin-top: 0;
+  }
+}
+
+.post__like-like--panorama {
+  @media (min-width: $tablets) {
+    content: "";
+    position: absolute;
+    top: 26px;
+    right: 58px;
+  }
+}

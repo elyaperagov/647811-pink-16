@@ -1,3 +1,146 @@
-.contacts__wrapper {
-  @include wrapper;
+.contacts {
+  order: 3;
+  padding: 0;
+  margin: 32px 0 25px;
+
+  @media (min-width: $tablets) {
+    margin: 55px 0 15px;
+  }
+
+  @media (min-width: $desktops) {
+    margin: 21px 0 15px;
+    width: 100%;
+  }
+}
+
+.contacts__list {
+  @include list;
+
+  @media (min-width: $tablets) {
+    display: flex;
+    flex-direction: column;
+    align-items: inherit;
+    padding: 33px 58px 0;
+  }
+
+  @media (min-width: $desktops) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 10px;
+  }
+}
+
+.form__contacts--legend {
+  @media (min-width: $tablets) {
+    padding: 0 24px;
+  }
+}
+
+input[type="text"]::placeholder {
+  font-size: 19px;
+  line-height: 30px;
+}
+
+.contacts__label {
+  font-size: 14px;
+  line-height: 30px;
+  padding-left: 23px;
+  text-transform: uppercase;
+  color: #d22856;
+
+  @media (min-width: $tablets) {
+    margin-left: 0;
+    margin-right: 22px;
+    margin-top: 20px;
+    padding-left: 10px;
+  }
+}
+
+.contacts__item {
+  padding-bottom: 18px;
+
+  @media (min-width: $tablets) {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 23px;
+
+    &:last-child {
+      padding-bottom: 26px;
+    }
+  }
+
+  @media (min-width: $desktops) {
+    padding-bottom: 0;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+}
+
+.contacts__input-text {
+  margin-top: 5px;
+  width: 100%;
+  border: 2px solid #e5e5e5;
+  border-radius: 3px;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 14px 20px 15px;
+  outline: none;
+
+  &:hover {
+    border: 2px solid #283645;
+  }
+
+  &:active,
+  &:focus {
+    border: 2px solid #d22856;
+  }
+
+  @media (min-width: $desktops) {
+    width: 84%;
+  }
+}
+
+.contacts__input {
+  @media (min-width: $tablets) {
+    order: 1;
+    width: 100%;
+    position: relative;
+
+    &--phone::before {
+      content: "";
+      position: absolute;
+      width: 60px;
+      height: 63px;
+      background: #e5e5e5 url("../img/icon-phone.svg") no-repeat center;
+      right: 0;
+      top: 5px;
+    }
+
+    &--email::before {
+      content: "";
+      position: absolute;
+      width: 60px;
+      height: 63px;
+      background: #e5e5e5 url("../img/icon-mail.svg") no-repeat center;
+      right: 0;
+      top: 5px;
+    }
+
+    @media (min-width: $desktops) {
+      width: 375px;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+.contacts__label-wrapper {
+  @media (min-width: $tablets) {
+    order: 2;
+    padding-left: 10px;
+    padding-top: 10px;
+  }
 }

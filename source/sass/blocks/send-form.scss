@@ -1,0 +1,68 @@
+.send__button {
+  background-color: #2aab6d;
+  border: none;
+  border-radius: 3px;
+  margin-top: 40px;
+  padding: 17px 50px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active .send__desc {
+    color: #61b98f;
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
+
+  @media (min-width: $tablets) {
+    padding: 17px 60px;
+  }
+}
+
+.send__desc {
+  font-size: 18px;
+  line-height: 30px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.send__required {
+  margin-top: 38px;
+  padding: 0 47px;
+
+  @media (min-width: $tablets) {
+    margin-top: 60px;
+    padding: 0;
+  }
+
+  &--hidden {
+    display: none;
+
+    @media (min-width: $desktops) {
+      display: inline;
+    }
+  }
+}
+
+.send {
+  width: 100%;
+
+  @media (min-width: $tablets) {
+    order: 6;
+    margin-top: 25px;
+  }
+}
+
+.send__form {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablets) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

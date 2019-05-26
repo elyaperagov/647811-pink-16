@@ -1,0 +1,113 @@
+.effect {
+  @media (max-width: $mobiles-max) {
+    @include visually-hidden;
+  }
+
+  @media (min-width: $desktops) {
+    background-color: #f2f2f2;
+  }
+}
+
+.effect__wrapper {
+  @include wrapper;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 57px;
+
+  @media (min-width: $desktops) {
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+}
+
+.effect__picture {
+  position: relative;
+  width: 240px;
+
+  @media (min-width: $desktops) {
+    width: 298px;
+  }
+}
+
+.effect__desc {
+  width: 50%;
+
+  @media (min-width: $desktops) {
+    width: 574px;
+  }
+}
+
+.effect__text {
+  line-height: 24px;
+  margin: 0;
+  padding: 10px 0;
+
+  @media (min-width: $desktops) {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 20px 0;
+  }
+}
+
+.effect__title {
+  font-size: 30px;
+  line-height: 36px;
+  max-width: 175px;
+  margin-top: 35px;
+  margin-bottom: 0;
+
+  @media (min-width: $desktops) {
+    max-width: inherit;
+    margin-top: 90px;
+  }
+}
+
+.effect__title br {
+  display: none;
+
+  @media (min-width: $tablets) {
+    display: inline;
+  }
+
+  @media (min-width: $desktops) {
+    display: none;
+  }
+}
+
+.effect__link-text {
+  margin: 0;
+
+  @media (min-width: $desktops) {
+    padding-top: 10px;
+  }
+}
+
+.effect__link {
+  margin: 0;
+  color: #d22856;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  @media (min-width: $desktops) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.effect__picture::before {
+  content: "24";
+  position: absolute;
+  color: #d22856;
+  font-size: 96px;
+  font-weight: 700;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @media (min-width: $desktops) {
+    top: 54%;
+    font-size: 120px;
+  }
+}
