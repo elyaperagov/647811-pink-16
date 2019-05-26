@@ -130,6 +130,7 @@
   }
 }
 
+
 .upload__adjustments {
   content: "";
   position: absolute;
@@ -197,6 +198,7 @@
   }
 
   @media (min-width: $desktops) {
+    left: 7px;
     width: 290px;
   }
 }
@@ -224,11 +226,46 @@
     top: -5px;
     left: 0;
   }
-}
 
+  &--crop {
+    left: 175px;
+
+    @media (min-width: $tablets) {
+      left: 145px;
+    }
+
+    @media (min-width: $desktops) {
+      left: 77px;
+    }
+  }
+
+  &--color {
+    @media (min-width: $tablets) {
+      left: 25px;
+    }
+
+    @media (min-width: $desktops) {
+      left: 255px;
+    }
+  }
+
+  &--contrast {
+    @media (min-width: $tablets) {
+      left: 95px;
+    }
+
+    @media (min-width: $desktops) {
+      left: 167px;
+    }
+  }
+}
 
 .upload__setting-icon {
   fill: #b5b9be;
+
+  @media (min-width: $tablets) {
+    fill: #d22856;
+  }
 
   &:hover {
     fill: #8d949b;

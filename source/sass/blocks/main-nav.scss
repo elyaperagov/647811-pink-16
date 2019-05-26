@@ -168,3 +168,7 @@
 .main-nav__item:hover a {
   color: #d22856;
 }
+
+.main-nav__item:active a {
+  color: rgba(255, 255, 255, 0.3);
+}

@@ -74,13 +74,25 @@
   }
 }
 
+.effect__link-text {
+  margin: 0;
+
+  @media (min-width: $desktops) {
+    padding-top: 10px;
+  }
+}
+
 .effect__link {
   margin: 0;
+  color: #d22856;
+
+  &:hover {
+    text-decoration: none;
+  }
 
   @media (min-width: $desktops) {
     font-size: 18px;
     line-height: 30px;
-    padding-top: 13px;
   }
 }
 
@@ -90,7 +102,7 @@
   color: #d22856;
   font-size: 96px;
   font-weight: 700;
-  top: 55%;
+  top: 52%;
   left: 50%;
   transform: translate(-50%, -50%);
 

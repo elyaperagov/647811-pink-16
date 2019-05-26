@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <link href="css/style.css" rel="stylesheet">
+    <link href="fonts/opensans.woff2" rel="preload" as="font">
+    <link href="fonts/opensansbold.woff2" rel="preload" as="font">
+    <link href="fonts/opensanslight.woff2" rel="preload" as="font">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
@@ -300,7 +303,7 @@
                       Обрезать
                     <div class="upload__adjustments upload__adjustments--crop upload__adjustments--active">
                       <div class="upload__line"></div>
-                      <div class="upload__range" tabindex="0"></div>
+                      <div class="upload__range upload__range--crop" tabindex="0"></div>
                     </div>
                   </li>
                   <li class="upload__setting">
@@ -312,7 +315,7 @@
                       Изменить цвет
                     <div class="upload__adjustments upload__adjustments--color">
                       <div class="upload__line"> </div>
-                      <div class="upload__range" tabindex="0"></div>
+                      <div class="upload__range upload__range--color" tabindex="0"></div>
                     </div>
                   </li>
                   <li class="upload__setting">
@@ -323,7 +326,7 @@
                       Настроить контраст
                     <div class="upload__adjustments upload__adjustments--contrast">
                       <div class="upload__line"> </div>
-                      <div class="upload__range" tabindex="0"></div>
+                      <div class="upload__range upload__range--contrast" tabindex="0"></div>
                     </div>
                   </li>
                 </ul>
@@ -405,7 +408,7 @@
           </ul>
           <div class="page-footer copyright">
             <p class="copyright__title">Разработано</p>
-            <a href="https://htmlacademy.ru" class="copyright__link">
+            <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
               <svg width="26.943px" height="34.09px" class="copyright__icon">
                 <use xlink:href="#icon-htmlacademy"></use>
               </svg>

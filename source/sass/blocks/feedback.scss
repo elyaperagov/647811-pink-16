@@ -79,6 +79,12 @@
       color: #bec2c7;
     }
   }
+
+  &--address {
+    @media (max-width: $mobiles-max) {
+      padding-top: 5px;
+    }
+  }
 }
 
 .feedback__item {
